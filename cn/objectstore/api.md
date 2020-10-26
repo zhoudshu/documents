@@ -58,7 +58,7 @@ usedSize	long	已用大小（单位:byte）
         {
         
             "bucketName": "test2-jz7mx9qr",
-            
+
             "usedSize": 6904386
         
         }
