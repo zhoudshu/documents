@@ -47,17 +47,17 @@ usedSize	long	已用大小（单位:byte）
     
     "data": [
     
-        {
+         {
         
             "bucketName": "test-jz7mx9qr",
-            
+
             "usedSize": 6072304
         
         },
         
         {
         
-             "bucketName": "test2-jz7mx9qr",
+            "bucketName": "test2-jz7mx9qr",
             
             "usedSize": 6904386
         
@@ -81,5 +81,5 @@ usedSize	long	已用大小（单位:byte）
 
 # Python版本 aws3接口样例
 
-参见本目录下的样例文件aws3_visit.py
+参见本目录下的样例文件 aws3_visit.py
 
