@@ -30,7 +30,9 @@ bucketName	String	否	桶名称
 ## 返回参数
 
 buketName	String	桶名称
+
 usedSize	long	已用大小（单位:byte）
+
 ## 返回样例
 
 {
