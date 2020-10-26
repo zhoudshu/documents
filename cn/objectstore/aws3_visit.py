@@ -7,9 +7,9 @@ from boto3.session import Session
 from botocore.exceptions import ClientError
 import boto3
 
-access_key = "NGAA-iqiyi"
+access_key = "NGAA-xxx"
 secret_key = "xxxxx"
-url = "http://xls3.zhoudsh.com"
+url = "http://xls3.xxx.com"
 
 session = Session(access_key, secret_key)
 s3_client = session.client('s3', endpoint_url=url)
