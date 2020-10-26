@@ -1,2 +1,0 @@
-# documents
-NGAA cdn document
