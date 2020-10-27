@@ -1,26 +1,18 @@
 ## API连接信息
 
-Endpoint :  http://xls3.xxxx.com
-
 AccessKeyId :  NGAA-xxxx
 
-SecretAccessKey:  ******  
+SecretAccessKey:  ****** 
 
 为安全 单独咨询技术支持提供
-
-## SDK
-
-Python版本 python 2.7.x
-
-Aws client sdk：https://github.com/boto/boto3
-
-使用说明：https://ecloud.10086.cn/op-help-center/develop/S3%20Python%20SDK.pdf
 
 ## 桶容量查询
 
 ### 请求地址
 
 http://[hostAddress]/action/api/v3/getBucketUsed
+密钥见 API连接信息
+
 ### 接口描述
 
 查询对象存储桶已用大小
@@ -70,7 +62,13 @@ usedSize	long	已用大小（单位:byte）
 }
 
 ## 标准aws3接口支持清单
+### 连接信息
 
+Endpoint :  http://xls3.xxxx.com
+
+密钥见 API连接信息
+
+为安全 单独咨询技术支持提供
 使用样例参见SDK python对应的样例
 - ListBuckets
 - CreateBucket
@@ -83,5 +81,7 @@ usedSize	long	已用大小（单位:byte）
 
 ## Python版本 aws3接口样例
 
-参见本目录下的样例文件 aws3_visit.py
+参见本目录下的样例文件 .[aws3_visit.py](https://github.com/zhoudshu/documents/blob/main/cn/objectstore/aws3_visit.py)
+
+## Java版本 aws3接口样例
 
