@@ -7,10 +7,10 @@
    
    **注意：存储空间的命名必须符合命名规范，同时创建后不支持更改存储空间名称。**
    
-   **存储空间的命名规则如下：
-   **- 字符长度至少为三位，
-   **- 仅支持英文小写、数字、-、.
-   **- 且首位末位不得为-、.
+   **存储空间的命名规则如下：**
+   - 字符长度至少为三位，
+   - 仅支持英文小写、数字、-、.
+   - 且首位末位不得为-、.
    
    
 具体过程如下：
@@ -71,8 +71,8 @@
 
 **注：**
 
-**- 目录名称不可以为'..', 且不准包含以下字符: '/''@'
-**- 创建文件夹，需上传至少一个文件
+- 目录名称不可以为'..', 且不准包含以下字符: '/''@'
+- 创建文件夹，需上传至少一个文件
 
 ### 文件管理
 #### 文件列表
@@ -127,8 +127,8 @@
 
 ![资源搜索](https://github.com/zhoudshu/documents/blob/main/images/objectstore/objectstore_17.png)
 
-**注意：
-**目前资源搜索仅支持资源前缀匹配，不支持通配符和后缀匹配
+**注意：**
+**目前资源搜索仅支持资源前缀匹配，不支持通配符和后缀匹配**
 
 ## 概览
  
@@ -245,7 +245,7 @@
    
    ![数据取回量查询](https://github.com/zhoudshu/documents/blob/main/images/objectstore/objectstore_33.png)
    
-   数据取回量报表页以折线图形式展现指定时间内的低频存储的数据取回量,您可点击相应的文字可使对应数据展现或隐藏。
+   数据取回量报表页以折线图形式展现指定时间内的数据取回量,您可点击相应的文字可使对应数据展现或隐藏。
    
    ![数据取回量曲线图](https://github.com/zhoudshu/documents/blob/main/images/objectstore/objectstore_34.png)
    
@@ -258,7 +258,7 @@
    
    ![服务质量查询](https://github.com/zhoudshu/documents/blob/main/images/objectstore/objectstore_36.png)
    
-   服务质量报表页以折线图形式展现指定时间内的服务情况：
+   服务质量报表页以柱状图形式展现指定时间内的服务情况：
    
    ![服务质量曲线图](https://github.com/zhoudshu/documents/blob/main/images/objectstore/objectstore_37.png)
    
