@@ -1,6 +1,6 @@
 ## XLS3产品入口
 
-后续会加入对象存储产品的文档内容总导航
+对象存储产品的文档内容总导航
 ### [产品介绍](https://github.com/zhoudshu/documents/blob/main/cn/objectstore/introduce.md)
 ### [产品概述](https://github.com/zhoudshu/documents/blob/main/cn/objectstore/summary.md)
 ### [产品限制](https://github.com/zhoudshu/documents/blob/main/cn/objectstore/limit.md)
