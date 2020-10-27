@@ -14,7 +14,7 @@
    
 具体过程如下：
 
-[创建存储空间](https://github.com/zhoudshu/documents/blob/main/images/objectstore/objectstore_01.png)
+![创建存储空间](https://github.com/zhoudshu/documents/blob/main/images/objectstore/objectstore_01.png)
 
 在弹出的对话框中，选择需要的地理区域，输入对应的空间名称，点击”确认“ 按钮，
 
