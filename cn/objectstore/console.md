@@ -5,12 +5,13 @@
    1. 进入 XLS3 管理控制台界面。
    2. 单击新建空间。
    
-   注意：存储空间的命名必须符合命名规范，同时创建后不支持更改存储空间名称。
+   **注意：存储空间的命名必须符合命名规范，同时创建后不支持更改存储空间名称。**
    
-   存储空间的命名规则如下：
-   - 字符长度至少为三位，
-   - 仅支持英文小写、数字、-、.
-   - 且首位末位不得为-、.
+   **存储空间的命名规则如下：
+   **- 字符长度至少为三位，
+   **- 仅支持英文小写、数字、-、.
+   **- 且首位末位不得为-、.
+   
    
 具体过程如下：
 
@@ -38,12 +39,13 @@
 
 ### 空间删除
 
-如果您不再需要存储空间，请将其删除以免进一步产生费用。删除存储空间之前请确保其中存储的文件已经全部清空，否则无法删除存储空间。
+如果您不再需要存储空间，请将其删除以免进一步产生费用。删除存储空间之前**请确保其中存储的文件已经全部清空**，否则无法删除存储空间。
 具体步骤如下：
 1. 点击左侧的导航菜单“存储空间”
 2. 选中待删除的存储空间，点击右侧的【删除】按钮。
 
 ![删除空间入口](https://github.com/zhoudshu/documents/blob/main/images/objectstore/objectstore_04.png)
+
 3. 弹出删除空间对话框，点击确认，即可删除空间（删除空间之前，需要先删除完空间内的所有文件）
 
 ![删除空间对话框](https://github.com/zhoudshu/documents/blob/main/images/objectstore/objectstore_05.png)
@@ -63,14 +65,14 @@
 
 ![创建目录入口](https://github.com/zhoudshu/documents/blob/main/images/objectstore/objectstore_07.png)
 
-3. 弹出对话框，输入目录名称并提交，目录创建完成
+3. 弹出对话框，输入目录名称并且选择至少一个文件上传，然后提交，目录创建完成
 
 ![创建目录对话框](https://github.com/zhoudshu/documents/blob/main/images/objectstore/objectstore_08.png)
 
-注：
+**注：**
 
-- 目录名称不可以为'..', 且不准包含以下字符: '/''@'
-- 创建文件夹，需上传至少一个文件
+**- 目录名称不可以为'..', 且不准包含以下字符: '/''@'
+**- 创建文件夹，需上传至少一个文件
 
 ### 文件管理
 #### 文件列表
@@ -112,7 +114,7 @@
 ![下载入口](https://github.com/zhoudshu/documents/blob/main/images/objectstore/objectstore_15.png)
 #### 文件详情
 
-选定需要查看详情的文件，点击”详情“操作
+选定需要查看详情的文件，点击”详情“操作，可以设置外链地址的过期时间
 
 ![文件详情](https://github.com/zhoudshu/documents/blob/main/images/objectstore/objectstore_16.png)
 
@@ -125,8 +127,8 @@
 
 ![资源搜索](https://github.com/zhoudshu/documents/blob/main/images/objectstore/objectstore_17.png)
 
-注意：
-目前资源搜索仅支持资源前缀匹配，不支持通配符和后缀匹配
+**注意：
+**目前资源搜索仅支持资源前缀匹配，不支持通配符和后缀匹配
 
 ## 概览
  
@@ -135,6 +137,8 @@
    概览总述：
    
    ![数据汇总](https://github.com/zhoudshu/documents/blob/main/images/objectstore/objectstore_18.png)
+   
+   上述图包含四个汇总指标，详见如下：
    
    - 当前总存储量 
    
@@ -152,6 +156,8 @@
    曲线图：
    
    ![数据曲线图](https://github.com/zhoudshu/documents/blob/main/images/objectstore/objectstore_19.png)
+   
+   上述曲线图包含三个指标的图，详见如下：
    
    - 存储容量曲线图
    
@@ -210,84 +216,87 @@
    
    ![带宽查询](https://github.com/zhoudshu/documents/blob/main/images/objectstore/objectstore_27.png)
    
-   带宽报表页以折线图形式展现指定时间内的上传带宽峰值和下载带宽峰值,您可点击相应的文字可使对应数据展现或隐藏
+   带宽报表页以折线图形式展现指定时间内的上传带宽趋势和下载带宽趋势,您可点击相应的文字可使对应数据展现或隐藏
    
    ![带宽曲线图](https://github.com/zhoudshu/documents/blob/main/images/objectstore/objectstore_28.png)
    
    ### 请求次数
    请求次数的报表，查询条件包括地区（region），存储空间（bucket），流量类型和时间。您可以手动选择某个region下的某个具体空间；统计周期默认为近30天，可选择近7天、当月，也可以自定义起止日期。
-   报表页以折线图形式展现指定时间内的GET请求数和PUT请求数,点击相应的文字可使对应数据展现或隐藏
    
    ![请求次数查询](https://github.com/zhoudshu/documents/blob/main/images/objectstore/objectstore_29.png)
+   
+   报表页以折线图形式展现指定时间内的GET请求数和PUT请求数,点击相应的文字可使对应数据展现或隐藏
+   
+   ![请求次数曲线图](https://github.com/zhoudshu/documents/blob/main/images/objectstore/objectstore_30.png)
    
    除折线图外，还有三个环状图，用于展现各isp占比、各地区占比、各bucket占比  
    isp占比：统计用户账户下各个isp的请求次数比例
    地区占比：根据IP统计用户账户下不同区域的请求次数比例
    bucket占比：统计用户账户下各个空间的请求次数比例
    
-   ![请求次数环状图](https://github.com/zhoudshu/documents/blob/main/images/objectstore/objectstore_30.png)
+   ![请求次数环状图](https://github.com/zhoudshu/documents/blob/main/images/objectstore/objectstore_31.png)
    
    您可将鼠标移至环状图上查看详细信息：
    
-   ![请求次数详情](https://github.com/zhoudshu/documents/blob/main/images/objectstore/objectstore_31.png)
+   ![请求次数详情](https://github.com/zhoudshu/documents/blob/main/images/objectstore/objectstore_32.png)
    
    ### 数据取回量
-   数据取回量报表，只支持查询标准存储的数据取回量，查询条件包括地区（region），存储空间（bucket）和时间。您可以手动选择某个具体空间，统计周期默认为近30天，您可以选择近7天、当月，也可以自定义起止日期。展示如下图：
+   数据取回量报表，只支持查询标准存储的数据取回量（标准HTTP Get的下载量），查询条件包括地区（region），存储空间（bucket）和时间。您可以手动选择某个具体空间，统计周期默认为近30天，您可以选择近7天、当月，也可以自定义起止日期。展示如下图：
    
-   ![数据取回量查询](https://github.com/zhoudshu/documents/blob/main/images/objectstore/objectstore_32.png)
+   ![数据取回量查询](https://github.com/zhoudshu/documents/blob/main/images/objectstore/objectstore_33.png)
    
    数据取回量报表页以折线图形式展现指定时间内的低频存储的数据取回量,您可点击相应的文字可使对应数据展现或隐藏。
    
-   ![数据取回量曲线图](https://github.com/zhoudshu/documents/blob/main/images/objectstore/objectstore_33.png)
+   ![数据取回量曲线图](https://github.com/zhoudshu/documents/blob/main/images/objectstore/objectstore_34.png)
    
    除折线图外，还有一个环状图，用于展现各存储空间所占比：统计用户账户下各个空间的存储容量比例。
    
-   ![数据取回量环状图](https://github.com/zhoudshu/documents/blob/main/images/objectstore/objectstore_34.png)
+   ![数据取回量环状图](https://github.com/zhoudshu/documents/blob/main/images/objectstore/objectstore_35.png)
  
    ### 服务质量
    服务质量的报表，您可以手动选择某个region下的某个具体空间，统计周期默认为近30天，可选择近7天、当月，您也可以自定义起止日期。
    
-   ![服务质量查询](https://github.com/zhoudshu/documents/blob/main/images/objectstore/objectstore_35.png)
+   ![服务质量查询](https://github.com/zhoudshu/documents/blob/main/images/objectstore/objectstore_36.png)
    
    服务质量报表页以折线图形式展现指定时间内的服务情况：
    
-   ![服务质量曲线图](https://github.com/zhoudshu/documents/blob/main/images/objectstore/objectstore_36.png)
+   ![服务质量曲线图](https://github.com/zhoudshu/documents/blob/main/images/objectstore/objectstore_37.png)
    
    除折线图外，还有四个环状图，用于展现各返回占比、异常各Bucket占比、异常返回各isp占比、异常返回各地区占比
 
-   ![服务质量环状图](https://github.com/zhoudshu/documents/blob/main/images/objectstore/objectstore_37.png)
+   ![服务质量环状图](https://github.com/zhoudshu/documents/blob/main/images/objectstore/objectstore_38.png)
    
    ### 业务分析
    业务分析的报表，您可以手动选择某个region下的某个具体空间， 业务分析报表支持Object\Referer\IP\UA的流量&请求统计。
    
-   ![业务分析查询](https://github.com/zhoudshu/documents/blob/main/images/objectstore/objectstore_38.png)
+   ![业务分析查询](https://github.com/zhoudshu/documents/blob/main/images/objectstore/objectstore_39.png)
    
    #### Object统计示例：
    - Object流量统计
    
-   ![Object流量统计](https://github.com/zhoudshu/documents/blob/main/images/objectstore/objectstore_39.png)
+   ![Object流量统计](https://github.com/zhoudshu/documents/blob/main/images/objectstore/objectstore_40.png)
    
    - Object请求统计
    
-   ![Object请求统计](https://github.com/zhoudshu/documents/blob/main/images/objectstore/objectstore_40.png)
+   ![Object请求统计](https://github.com/zhoudshu/documents/blob/main/images/objectstore/objectstore_41.png)
    
    #### Referer统计示例：
    - Referer流量统计
    
-   ![Referer流量统计](https://github.com/zhoudshu/documents/blob/main/images/objectstore/objectstore_41.png)
+   ![Referer流量统计](https://github.com/zhoudshu/documents/blob/main/images/objectstore/objectstore_42.png)
    
    - Referer请求统计
    
-   ![Referer请求统计](https://github.com/zhoudshu/documents/blob/main/images/objectstore/objectstore_42.png)
+   ![Referer请求统计](https://github.com/zhoudshu/documents/blob/main/images/objectstore/objectstore_43.png)
    
    #### IP统计示例：
    - IP流量统计
    
-   ![IP流量统计](https://github.com/zhoudshu/documents/blob/main/images/objectstore/objectstore_43.png)
+   ![IP流量统计](https://github.com/zhoudshu/documents/blob/main/images/objectstore/objectstore_44.png)
    
    - IP请求统计
    
-   ![IP请求统计](https://github.com/zhoudshu/documents/blob/main/images/objectstore/objectstore_44.png)
+   ![IP请求统计](https://github.com/zhoudshu/documents/blob/main/images/objectstore/objectstore_45.png)
    #### UA统计示例：
    - UA流量统计
    
