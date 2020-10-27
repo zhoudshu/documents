@@ -11,11 +11,13 @@ SecretAccessKey:  ******
 ### 请求地址
 
 http://[hostAddress]/action/api/v3/getBucketUsed
+
 密钥见 API连接信息
 
 ### 接口描述
 
 查询对象存储桶已用大小
+
 ### 请求参数
 
 bucketName	String	否	桶名称
@@ -62,14 +64,8 @@ usedSize	long	已用大小（单位:byte）
 }
 
 ## 标准aws3接口支持清单
-### 连接信息
 
-Endpoint :  http://xls3.xxxx.com
-
-密钥见 API连接信息
-
-为安全 单独咨询技术支持提供
-使用样例参见SDK python对应的样例
+### 支持aws3接口列表
 - ListBuckets
 - CreateBucket
 - DeleteBucket
@@ -79,9 +75,17 @@ Endpoint :  http://xls3.xxxx.com
 - DeleteObject
 - DeleteObjects
 
-## Python版本 aws3接口样例
+### 连接信息
 
-参见本目录下的样例文件 .[aws3_visit.py](https://github.com/zhoudshu/documents/blob/main/cn/objectstore/aws3_visit.py)
+Endpoint :  http://xls3.xxxx.com
+
+密钥见 API连接信息
+
+### Python版本 aws3接口样例
+### 使用说明
+- 安装依赖 .[SDK](https://github.com/zhoudshu/documents/blob/main/cn/objectstore/sdk.md)
+
+- 样例文件 .[aws3_visit.py](https://github.com/zhoudshu/documents/blob/main/cn/objectstore/aws3_visit.py)
 
 ## Java版本 aws3接口样例
 
