@@ -50,22 +50,21 @@
 </tr><tr>
 <td >数据统计</a></td>
 <td><ul style = "margin-bottom: 0px;">
-<li><a href = "https://github.com/zhoudshu/documents/blob/main/cn/cloudlive/console_analysis_increment.md" >查询计费项包括流量/带宽、截图、转码、录制、转推所产生的相关数据。</li>
-<li><a href = "https://github.com/zhoudshu/documents/blob/main/cn/cloudlive/console_analysis_opt.md" >对直播运营数据进行分析查询。</li></ul></td>
+<li><a href = "https://github.com/zhoudshu/documents/blob/main/cn/cloudlive/console_analysis_increment.md" >增值功能</li>
+<li><a href = "https://github.com/zhoudshu/documents/blob/main/cn/cloudlive/console_analysis_opt.md" >运营数据</li></ul></td>
 </tr><tr>
 <td><a href = "https://github.com/zhoudshu/documents/blob/main/cn/cloudlive/console_analysis_streamquery.md">流数据查询</a></td>
 <td>可查询单个视频流的推流、播放数据详情，并将数据导出到本地。</td>
 </tr><tr>
-<td><a href = "https://github.com/zhoudshu/documents/blob/main/cn/cloudlive/console_logdownload.md">日志分析</a></td>
+<td>日志分析</td>
 <td>
 <ul style = "margin-bottom: 0px;">
 <li><a href = "https://github.com/zhoudshu/documents/blob/main/cn/cloudlive/console_mediainfo_picture.md">截图信息下载</li>
-<li><a href = "https://github.com/zhoudshu/documents/blob/main/cn/cloudlive/console_mediainfo_record.md">录制信息下载</li></ul>
-<li>可对前一天、近一周、近一个月或自定义时间段的日志数据包进行下载。</li></td>
+<li><a href = "https://github.com/zhoudshu/documents/blob/main/cn/cloudlive/console_mediainfo_record.md">录制信息下载</li>
+<li><a href = "https://github.com/zhoudshu/documents/blob/main/cn/cloudlive/console_logdownload.md">日志下载</li></ul></td>
 </tr>
 </tr>
 </table>
-
 
 ## 直播工具箱
 直播工具箱主要围绕直播流程提供了一些保障服务的附属功能。

@@ -3,7 +3,6 @@
 新流云控制台为标准直播提供计费用量查询功能，若您想了解当前直播录制、直播转码、直播截图等服务使用情况，您可以通过云直播控制台【统计分析】>[【增值功能】]()查看相关数据。您可以查看一个月以内的云直播服务使用的相关数据。
 
 ![](https://github.com/zhoudshu/documents/blob/main/images/cloudlive/cloudlive_03.png)
-<img src="https://main.qcloudimg.com/raw/d2b1f59fb28ad9b506c36b5c031c024c.png" width="750px"/>
 
 ### 计费说明
 
