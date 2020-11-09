@@ -18,7 +18,9 @@
 ![](https://github.com/zhoudshu/documents/blob/main/images/cloudlive/cloudlive_03.png)
 
 4. 若您在【域名管理】中已添加播放域名，即可在下方查看对应生成的播放地址。其中，播放地址由以下4部分组成：
+
 ![](https://main.qcloudimg.com/raw/72989c8f55fe7f2ed596bd09882f5a09.png)
+
 支持 RTMP、FLV 和 HLS 协议，查看播放地址：
 
 ![](https://github.com/zhoudshu/documents/blob/main/images/cloudlive/cloudlive_03.png)

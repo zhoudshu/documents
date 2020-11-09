@@ -33,6 +33,7 @@
 
 ### 服务地址
 服务入口地址为：http://[hostAddress]/ccsp/action/api/v3/Action
+
 注：Action为请求操作的功能名称，内容按各接口实际情况替换。
 
 ### 通信协议
@@ -43,6 +44,7 @@
 
 ### 字符编码
 请求及返回结果请使用 UTF-8 字符集进行编码。
+
 注意：编码时空格要转换成 “%20” , 而不是 “+”。
 
 ### 公共请求参数
@@ -54,12 +56,14 @@
 | 名称        | 类型     | 是否必须   |  描述                                       |
 | --------- | ------ | ---------------------------------------- | ---- |
 | accessKeyId | String | 是 | 访问服务的身份标识 |
-| signature   | String | 是 | 签名字符串，关于签名的计算方法，请参见签名机制小节2.6 |
+| signature   | String | 是 | 签名字符串，关于签名的计算方法，请参见签名机制小节 |
 | timestamp   | Long   | 是 | 请求的时间戳，从格林威治时间1970年01月01日00时00分00秒起至现在的总毫秒数。|
 
 ### 签名机制
 
-API接口服务会对每个访问的请求进行身份验证，所以每次提交请求，都需要在请求中包含签名（signature）信息。服务端通过使用 accessKeyId和 secretKey 进行对称加密的方法来验证请求的发送者身份。accessKeyId和secretKey在统创建系用户时，自动生成。其中 accessKeyId用于标识访问者的身份；secretKey是用于加密签名字符串和服务器端验证签名字符串的密钥，必须严格保密，只有用户自己知道。
+API接口服务会对每个访问的请求进行身份验证，所以每次提交请求，都需要在请求中包含签名（signature）信息。服务端通过使用 accessKeyId和 secretKey 进行对称加密的方法来验证请求的发送者身份。
+
+accessKeyId和secretKey在统创建系用户时，自动生成。其中 accessKeyId用于标识访问者的身份；secretKey是用于加密签名字符串和服务器端验证签名字符串的密钥，必须严格保密，只有用户自己知道。
 
 用户在访问时，按照下面的方法对请求进行签名处理：
 
@@ -76,9 +80,10 @@ mac.init(signingKey);
 byte[] rawHmac = mac.doFinal(data);
 return org.apache.commons.codec.binary.Base64.encodeBase64String(rawHmac);
 }
-注意：“\n” 是换行符，不要将 “\” 转义。也就是说，不要用 “\\n”。
 
 ```
+
+注意：“\n” 是换行符，不要将 “\” 转义。也就是说，不要用 “\\n”。
 
 ### 请求样例
 
@@ -90,7 +95,7 @@ http://[hostAddress]/ccsp/action/api/v3/Action?xxx&accessKeyId=xxx&timestamp=xxx
 
 ### 公共应答参数
 
-| 名称        | 类型     | 是否必须   |  描述                                       |
+| 名称      | 类型     | 是否必须   |  描述                            |
 | --------- | ------ | ---------------------------------------- | ---- |
 | requestId | String | 是 | 用户每次请求返回对应的唯一标识 |
 | httpCode  | String | 是 | HTTP状态码，描述一次请求对应的HTTP状态。|
@@ -108,10 +113,10 @@ http://[hostAddress]/ccsp/action/api/v3/Action?xxx&accessKeyId=xxx&timestamp=xxx
 "httpCode": "200",
     "code": "success",
     "message": "success",
-    	"totalCount": 0,
+    "totalCount": 0,
     "data": [
         {
-			/*具体的接口返回内容*/
+		/*具体的接口返回内容*/
         }
     ]
 }
@@ -120,8 +125,8 @@ http://[hostAddress]/ccsp/action/api/v3/Action?xxx&accessKeyId=xxx&timestamp=xxx
 #### 失败样例
 ```
 {
-"requestId": "971b4c4d4c7f45b9b8690fb88cb65bf5",
-"httpCode": "400",
+ "requestId": "971b4c4d4c7f45b9b8690fb88cb65bf5",
+ "httpCode": "400",
  "code": " Missing.Parameter",
  "message": "The request parameter is miss.password",
  "data": [
@@ -139,7 +144,7 @@ Http码为5XX的是服务内部错误，此时建议重试。
 
 #### 公共HTTP状态码
 
-| httpCode        |  描述                                       |
+| httpCode        |  描述                            |
 | --------- | ------ |
 | 200  | 成功 |
 | 400  | 缺少参数或参数无效 |
@@ -172,6 +177,7 @@ Http码为5XX的是服务内部错误，此时建议重试。
 
 ### 字符编码
 请求及返回结果请使用 UTF-8 字符集进行编码。
+
 注意：编码时空格要转换成 “%20” , 而不是 “+”。
 
 ### 公共请求参数
@@ -180,7 +186,7 @@ Http码为5XX的是服务内部错误，此时建议重试。
 
 公共请求参数具体列表如下：
 
-| 名称        | 类型     | 是否必须   |  描述                                       |
+| 名称       | 类型  | 是否必须   |  描述                              |
 | --------- | ------ | ---------------------------------------- | ---- |
 | accessKeyId | String | 是 | 访问服务的身份标识 |
 | signature   | String | 是 | 签名字符串，关于签名的计算方法，请参见签名机制小节2.6 |
@@ -188,7 +194,9 @@ Http码为5XX的是服务内部错误，此时建议重试。
 
 ### 签名机制
 
-API接口服务会对每个访问的请求进行身份验证，所以每次提交请求，都需要在请求中包含签名（signature）信息。服务端通过使用 accessKeyId和 secretKey 进行对称加密的方法来验证请求的发送者身份。accessKeyId和secretKey在统创建系用户时，自动生成。其中 accessKeyId用于标识访问者的身份；secretKey是用于加密签名字符串和服务器端验证签名字符串的密钥，必须严格保密，只有用户自己知道。
+API接口服务会对每个访问的请求进行身份验证，所以每次提交请求，都需要在请求中包含签名（signature）信息。服务端通过使用 accessKeyId和 secretKey 进行对称加密的方法来验证请求的发送者身份。
+
+accessKeyId和secretKey在统创建系用户时，自动生成。其中 accessKeyId用于标识访问者的身份；secretKey是用于加密签名字符串和服务器端验证签名字符串的密钥，必须严格保密，只有用户自己知道。
 
 用户在访问时，按照下面的方法对请求进行签名处理：
 
@@ -205,9 +213,10 @@ mac.init(signingKey);
 byte[] rawHmac = mac.doFinal(data);
 return org.apache.commons.codec.binary.Base64.encodeBase64String(rawHmac);
 }
-注意：“\n” 是换行符，不要将 “\” 转义。也就是说，不要用 “\\n”。
 
 ```
+
+注意：“\n” 是换行符，不要将 “\” 转义。也就是说，不要用 “\\n”。
 
 ### 请求样例
 
@@ -224,7 +233,7 @@ Http码为4XX的是客户端错误，建议用户根据错误描述，修正请�
 Http码为5XX的是服务内部错误，此时建议重试。
 #### 公共HTTP状态码
 
-| httpCode        |  描述                                       |
+| httpCode  |  描述         |
 | --------- | ------ |
 | 200  | 成功 |
 | 400  | 缺少参数或参数无效 |
@@ -233,7 +242,7 @@ Http码为5XX的是服务内部错误，此时建议重试。
 | 500  | 服务内部错误 |
 
 #### 公共CODE状态码
-| code        |  描述                                       |
+| code      |  描述         |
 | --------- | ------ |
 | Invalid.Paramater | 无效的参数，一般为参数格式错误 |
 | Missing.Parameter | 缺少参数。|
@@ -257,7 +266,7 @@ http://[hostAddress]/ccsp/action/api/v3/GetLiveOnlineStreamList
 | domain | String | 否 | 推流域名 |
 | app | String | 否 | app名称 |
 | stream | String |否| 流名称 |
-| startTime | Date |否| 数据范围开始时间，格式yyyy-MM-dd HH:mm:ss，开始时间和结束时间范围上限为7 天 |
+| startTime | Date |否| 数据范围开始时间，格式yyyy-MM-dd HH:mm:ss，开始时间和结束时间范围上限为7天 |
 | endTime | Date | 否 | i数据范围结束时间，格式yyyy-MM-dd HH:mm:ss，开始时间和结束时间范围上限为7天 |
 
 #### 返回参数
@@ -378,9 +387,11 @@ http://[hostAddress]/ccsp/action/api/v3/GetLiveHistoryStreamList
 
 ### 流上报外部鉴权
 #### 请求地址
-需要推流客户提供, 比如
+需要推流客户提供, 比如:
+
 http://api.haohancloud.com/l2/cdn/auth?app=live&domain=devlivepush.haohancloud.com&stream=7AZTZE7Y_C0
-采用GET方法
+
+:采用GET方法
 
 #### 接口描述
 流上下线回调前需调用此接口鉴权,用以判断CDN厂商发送直播流上下线是否通过，成功则允许推流，失败则断流禁播，上下线通知前调用此接口访问直播流鉴权，防止非本系统侧的直播流上下线通知接口被调用，
@@ -396,7 +407,7 @@ http://api.haohancloud.com/l2/cdn/auth?app=live&domain=devlivepush.haohancloud.c
 
 #### 返回参数
 
-| 名称        | 类型     | 是否必须   |  描述                                       |
+| 名称      | 类型     | 是否必须   |  描述                            |
 | --------- | ------ | ---------------------------------------- | ---- |
 | ret | String | 是 | 状态码 0: 成功 1: 失败|
 | msg | String | 是 | 描述 |
@@ -420,7 +431,9 @@ http://api.haohancloud.com/l2/cdn/auth?app=live&domain=devlivepush.haohancloud.c
 ### 流上线通知
 #### 请求地址
 需要推流客户提供, 比如
+
 http://api.haohancloud.com//l2/cdn/xl_publishStream?id=ctyuntestv3
+
 采用GET方法
 
 #### 接口描述
@@ -428,13 +441,13 @@ http://api.haohancloud.com//l2/cdn/xl_publishStream?id=ctyuntestv3
 
 #### 请求参数
 
-| 名称        | 类型     | 是否必须   |  描述                                       |
+| 名称      | 类型   | 是否必须   |  描述                              |
 | --------- | ------ | ---------------------------------------- | ---- |
 | id | String | 是 | 流名称 |
 
 #### 返回参数
 
-| 名称        | 类型     | 是否必须   |  描述                                       |
+| 名称      | 类型   | 是否必须   |  描述                              |
 | --------- | ------ | ---------------------------------------- | ---- |
 |  | String | 是 | 状态码 0: 成功 1: 失败|
 
@@ -451,7 +464,9 @@ http://api.haohancloud.com//l2/cdn/xl_publishStream?id=ctyuntestv3
 ### 流下线通知
 #### 请求地址
 需要推流客户提供, 比如
+
 http://api.haohancloud.com//l2/cdn/xl_unpublishStream?id=ctyuntestv3
+
 采用GET方法
 
 #### 接口描述
@@ -482,8 +497,11 @@ http://api.haohancloud.com//l2/cdn/xl_unpublishStream?id=ctyuntestv3
 ### 流播控接口
 #### 请求地址
 新流提供, 比如
+
 http://ip:port/ccsp/action/api/live/streamControl
+
 样例：使用V2版本的公共参数
+
 https://ccsp-test.sinocache.net/action/api/live/streamControl?action=forbid&type=publish&reltime=300&channel=rtmp://push.haohan.test.cn/live/ctyuntestv3&accessKeyId=NGAA-test&timestamp=1585722543000&signature=hsseNcazSTd9YleYgcZ9nkjP9QH0=
 
 采用GET方法
@@ -494,7 +512,7 @@ https://ccsp-test.sinocache.net/action/api/live/streamControl?action=forbid&type
 
 #### 请求参数
 
-| 名称        | 类型     | 是否必须   |  描述                                       |
+| 名称      | 类型     | 是否必须   |  描述                            |
 | --------- | ------ | ---------------------------------------- | ---- |
 | action | String | 是 | 操作类型 forbid：禁播;resume：恢复 |
 | type | String | 是 | 流类型 publish:直播流|
@@ -503,7 +521,7 @@ https://ccsp-test.sinocache.net/action/api/live/streamControl?action=forbid&type
 
 #### 返回参数
 
-| 名称        | 类型     | 是否必须   |  描述                                       |
+| 名称      | 类型     | 是否必须   |  描述                            |
 | --------- | ------ | ---------------------------------------- | ---- |
 |  | String | 是 | 状态码 0: 成功 1: 失败|
 
@@ -521,8 +539,11 @@ https://ccsp-test.sinocache.net/action/api/live/streamControl?action=forbid&type
 ### 实时在线观看人数
 
 #### 请求地址
+
 http://ip:port/ccsp/action/api/live/onlineViewers
+
 样例：使用V2版本的公共参数
+
 https://ccsp-test.sinocache.net/action/api/live/onlineViewers?accessKeyId=NGAA-test&timestamp=1585723199000&signature=/x0rremnBlTqiEj3SFB5qf07YYg=
 
 采用POST方法
@@ -533,7 +554,7 @@ https://ccsp-test.sinocache.net/action/api/live/onlineViewers?accessKeyId=NGAA-t
 
 #### 请求参数
 
-| 名称        | 类型     | 是否必须   |  描述                                       |
+| 名称      | 类型   | 是否必须   |  描述                              |
 | --------- | ------ | ---------------------------------------- | ---- |
 | dateTime | String | 是 | 查询时刻 格式为yyyy-MM-ddTHH:mm:ss+08:00 |
 | dataInterval | String | 是 | 间隔维度 一分钟维度:"1m" |
@@ -543,12 +564,13 @@ https://ccsp-test.sinocache.net/action/api/live/onlineViewers?accessKeyId=NGAA-t
 | dataProvince | Integer | 否 | 分省份统计 默认不分省份统计，0:开启分省份统计； 1:关闭分省份统计 |
 
 ```
-{"dataInterval":"1m",
-"dataIsp":0,
-"dataProvince":0,
-"dateTime":"2020-04-01T15:20:00+08:00",
-"domains":"pull.haohan.test.cn",
-"stream":"live/ctyuntestv3"
+{
+    "dataInterval":"1m",
+    "dataIsp":0,
+    "dataProvince":0,
+    "dateTime":"2020-04-01T15:20:00+08:00",
+    "domains":"pull.haohan.test.cn",
+    "stream":"live/ctyuntestv3"
 }
 ```
 
@@ -558,18 +580,19 @@ https://ccsp-test.sinocache.net/action/api/live/onlineViewers?accessKeyId=NGAA-t
 | --------- | ------ | ---------------------------------------- | ---- |
 | result | List<Item> | 是 | 返回结果集 |
 
-<Item>参数
+结果集
+
 | 名称        | 类型     | 是否必须   |  描述                          |
 | --------- | ------ | ---------------------------------------- | ---- |
 | domain | String | 是 | 拉流域名 |
 | streamData | List<Item> | 是 | 直播流数据 |
-|   stream | String | 是 | 直播流名 |
-|   timestamp | String | 是 | 粒度统计的时间 |
-|   totalValue | String | 是 | 总在线观看人数 |
-|   provinceData| List<Item> | 否 | 分省份数据 开启分省份统计时提供，开启运营商统计时也提供数据 |
+| -->stream | String | 是 | 直播流名 |
+| -->timestamp | String | 是 | 粒度统计的时间 |
+| -->totalValue | String | 是 | 总在线观看人数 |
+| -->provinceData| List<Item> | 否 | 分省份数据 开启分省份统计时提供，开启运营商统计时也提供数据 |
 |       province | String | 否 | 省份缩写 开启运营商统计时也提供数据 |
 |       Value | String | 否  | 在线观看人数, 未开启省份统计开启运营商统计时不需要提供此数据 |
-|   ispData | List<Item> | 否 | 分运营商数据 开启分运营商统计时提供 |
+| -->ispData | List<Item> | 否 | 分运营商数据 开启分运营商统计时提供 |
 |       isp | String | 否  | 运营商缩写 |
 |       value | String | 否  | 在线观看人数 |
 
@@ -613,8 +636,11 @@ https://ccsp-test.sinocache.net/action/api/live/onlineViewers?accessKeyId=NGAA-t
 ### 流量
 
 #### 请求地址
+
 http://ip:port/ccsp/action/api/live/flow
+
 样例：使用V2版本的公共参数
+
 https://ccsp-test.sinocache.net/action/api/live/flow?accessKeyId=NGAA-test&timestamp=1585730006000&signature=X+mXxXtebFSys45UsqJzNdKENAU=
 
 采用POST方法
@@ -626,7 +652,7 @@ https://ccsp-test.sinocache.net/action/api/live/flow?accessKeyId=NGAA-test&times
 
 #### 请求参数
 
-| 名称        | 类型     | 是否必须   |  描述                                       |
+| 名称      | 类型   | 是否必须   |  描述                              |
 | --------- | ------ | ---------------------------------------- | ---- |
 | dateFrom | String | 是 | 查询时刻 格式为yyyy-MM-ddTHH:mm:ss+08:00 |
 | dateTo | String | 是 | 查询时刻 格式为yyyy-MM-ddTHH:mm:ss+08:00 |
@@ -654,12 +680,12 @@ https://ccsp-test.sinocache.net/action/api/live/flow?accessKeyId=NGAA-test&times
 
 #### 返回参数
 
-| 名称        | 类型     | 是否必须   |  描述                                       |
+| 名称      | 类型   | 是否必须   |  描述                              |
 | --------- | ------ | ---------------------------------------- | ---- |
 | result | List<Item> | 是 | 返回结果集 |
 
-<Item>参数
-| 名称        | 类型     | 是否必须   |  描述                                       |
+结果集:
+| 名称      | 类型   | 是否必须   |  描述                              |
 | --------- | ------ | ---------------------------------------- | ---- |
 | domain | String | 是 | 拉流域名 |
 | streamData | List<Item> | 是 | 直播流数据 |
@@ -719,8 +745,11 @@ https://ccsp-test.sinocache.net/action/api/live/flow?accessKeyId=NGAA-test&times
 ### 带宽
 
 #### 请求地址
+
 http://ip:port/ccsp/action/api/live/bandwidth
+
 样例：使用V2版本的公共参数
+
 https://ccsp-test.sinocache.net/action/api/live/bandwidth?accessKeyId=NGAA-test&timestamp=1585730307000&signature=Y2Zylx0JaWHlaTgNvpfS+qiQsoI=
 
 采用POST方法
@@ -763,7 +792,7 @@ https://ccsp-test.sinocache.net/action/api/live/bandwidth?accessKeyId=NGAA-test&
 | --------- | ------ | ---------------------------------------- | ---- |
 | result | List<Item> | 是 | 返回结果集 |
 
-<Item>参数
+结果集:
 | 名称        | 类型     | 是否必须   |  描述                          |
 | --------- | ------ | ---------------------------------------- | ---- |
 | domain | String | 是 | 拉流域名 |
@@ -825,8 +854,11 @@ https://ccsp-test.sinocache.net/action/api/live/bandwidth?accessKeyId=NGAA-test&
 ### 独立IP数
 
 #### 请求地址
+
 http://ip:port/ccsp/action/api/live/uv
+
 样例：使用V2版本的公共参数
+
 https://ccsp-test.sinocache.net/action/api/live/uv?accessKeyId=NGAA-test&timestamp=1585730706000&signature=sZsZOO1deAoissx7nj7dnLGHHZf+g=
 
 采用POST方法
@@ -837,7 +869,7 @@ https://ccsp-test.sinocache.net/action/api/live/uv?accessKeyId=NGAA-test&timesta
 
 #### 请求参数
 
-| 名称        | 类型     | 是否必须   |  描述                                       |
+| 名称      | 类型   | 是否必须   |  描述                              |
 | --------- | ------ | ---------------------------------------- | ---- |
 | dateFrom | String | 是 | 查询时刻 格式为yyyy-MM-ddTHH:mm:ss+08:00 |
 | dateTo | String | 是 | 查询时刻 格式为yyyy-MM-ddTHH:mm:ss+08:00 |
@@ -865,7 +897,7 @@ https://ccsp-test.sinocache.net/action/api/live/uv?accessKeyId=NGAA-test&timesta
 | --------- | ------ | ---------------------------------------- | ---- |
 | result | List<Item> | 是 | 返回结果集 |
 
-<Item>参数
+结果集:
 | 名称        | 类型     | 是否必须   |  描述                                       |
 | --------- | ------ | ---------------------------------------- | ---- |
 | domain | String | 是 | 拉流域名 |
@@ -927,8 +959,11 @@ https://ccsp-test.sinocache.net/action/api/live/uv?accessKeyId=NGAA-test&timesta
 ### 请求次数
 
 #### 请求地址
+
 http://ip:port/ccsp/action/api/live/pv
+
 样例：使用V2版本的公共参数
+
 https://ccsp-test.sinocache.net/action/api/live/pv?accessKeyId=NGAA-test&timestamp=1585730706000&signature=sZsZOO1deAoissx7nj7dnLGHHZf+g=
 
 采用POST方法
@@ -940,7 +975,7 @@ https://ccsp-test.sinocache.net/action/api/live/pv?accessKeyId=NGAA-test&timesta
 
 #### 请求参数
 
-| 名称        | 类型     | 是否必须   |  描述                                       |
+| 名称      | 类型   | 是否必须   |  描述                              |
 | --------- | ------ | ---------------------------------------- | ---- |
 | dateFrom | String | 是 | 查询时刻 格式为yyyy-MM-ddTHH:mm:ss+08:00 |
 | dateTo | String | 是 | 查询时刻 格式为yyyy-MM-ddTHH:mm:ss+08:00 |
@@ -968,7 +1003,7 @@ https://ccsp-test.sinocache.net/action/api/live/pv?accessKeyId=NGAA-test&timesta
 | --------- | ------ | ---------------------------------------- | ---- |
 | result | List<Item> | 是 | 返回结果集 |
 
-<Item>参数
+结果集:
 | 名称      | 类型   | 是否必须   |  描述                              |
 | --------- | ------ | ---------------------------------------- | ---- |
 | domain | String | 是 | 拉流域名 |
@@ -1029,6 +1064,7 @@ https://ccsp-test.sinocache.net/action/api/live/pv?accessKeyId=NGAA-test&timesta
 ## 补充说明-V2版本
 ### 省份
 | 序号	| 省份(province)	 | 省份缩写 |
+| ----- | ------ | ------- |
 | 1	| 安徽	| AH |
 | 2	| 北京	| BJ |
 | 3	| 福建	| FJ |
@@ -1066,6 +1102,7 @@ https://ccsp-test.sinocache.net/action/api/live/pv?accessKeyId=NGAA-test&timesta
 
 ### 运营商
 | 序号	| 运营商(isp)	| 运营商缩写 |
+| ----- | ------ | ------- |
 | 1	| 中国移动	| yd |
 | 2	| 中国联通	| lt |
 | 3	| 中国电信	| dx |
@@ -1073,6 +1110,7 @@ https://ccsp-test.sinocache.net/action/api/live/pv?accessKeyId=NGAA-test&timesta
 ### 终端
 
 | 序号	| 终端类型	| 终端类型缩写 |
+| ----- | ------------- | ------- |
 | 1	| 终端类型PC下的终端子类型	| PC |
 | 2	| 终端类型Mobile下的终端子类型	| IOS、Android、Other |
 | 3	| 终端类型Other下的终端子类型	| Other |

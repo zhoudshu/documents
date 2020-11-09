@@ -1,5 +1,7 @@
 云直播控制台提供地址生成器功能，支持通过填写地址拼接信息，辅助用户快速生成推流/播放地址。其中直播地址主要由域名（domain）、应用名称（AppName）、流名称（StreamName）以及鉴权 Key 组成。
+
 ![](https://main.qcloudimg.com/raw/891a0d8db4d94cd92498d0d0d3944ade.png)
+
 地址生成后，可通过**选择复制**、**单击复制按钮**的方式提取地址信息。
 
 
@@ -38,6 +40,7 @@
 
 ### 推流地址说明
 推流支持 RTMP 协议，可通过地址生成器功能生成前缀为`rtmp://`的推流地址。
+
 ![](https://github.com/zhoudshu/documents/blob/main/images/cloudlive/cloudlive_03.png)
 
 <h2 id="play">生成播放地址</h2>

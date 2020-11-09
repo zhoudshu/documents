@@ -11,17 +11,18 @@
 </tr>
 <tr>
 <td ><a href = "https://github.com/zhoudshu/documents/blob/main/cn/cloudlive/console_overview.md">概览</a></td>
-<td><ul style = "margin-bottom: 0px;"><li>可以查看计费宽带/流量的趋势等相关数据、直播的实时数据、直播在线人数。</li><li>可按需切换计费模式或更改时间粒度。</li></ul></td>
+<td><ul style = "margin-bottom: 0px;"><li>可以查看计费宽带/流量的趋势等相关数据、直播的实时数据、直播在线人数。</li>
+<li>可按需更改时间粒度。</li></ul></td>
 </tr><tr>
 <td><a href = "https://github.com/zhoudshu/documents/blob/main/cn/cloudlive/console_domainmgr.md">域名管理</a></td>
 <td><ul style = "margin-bottom: 0px;"><li>可添加并管理自有加速域名，并对域名进行 CNAME 配置。</li>
 <li>可在线生成对应直播地址。</li>
-<li>可对直播域名调用已创建的录制、转码、截图鉴黄、水印、回调功能模板。</li>
+<li>可对直播域名调用已创建的录制、转码、截图、水印、回调功能模板。</li>
 <li>可对直播域名配置鉴权、HTTPS 协议、加速区域、源站等信息。</li></ul></td>
 </tr><tr>
 <td><a href = "https://github.com/zhoudshu/documents/blob/main/cn/cloudlive/console_streammgr.md">流管理</a></td>
 <td>可对直播在线流、历史流以及禁推流进行管理，并对直播流进行禁止和恢复推流等操作。</td>
-</tr><tr>
+</tr></tr>
 </table>
 
 ## 场景服务
@@ -32,14 +33,12 @@
 <tr><th width="17%">功能名称</th><th>功能描述</th></tr>
 <tr>
 <td ><a href = "https://github.com/zhoudshu/documents/blob/main/cn/cloudlive/console_template.md">功能配置</a></td>
-<td>提供了直播中所需的录制、转码、截图、水印等功能的配置模板服务，为降低页面跳转复杂度，特在此新增了模板绑定域名的流程。</td>
 <td><ul style= "margin: 0"><li>供了直播中所需的录制、转码、截图、水印等功能的配置模板服务，为降低页面跳转复杂度，特在此新增了模板绑定域名的流程。</li>
 <li>针对各触发事件设置接收相关回调信息的路径。</li></ul></td>
 </tr><tr>
 <td><a href = "https://github.com/zhoudshu/documents/blob/main/cn/cloudlive/console_tools_streamevent.md">断流诊断</a></td>
-<td><ul style= "margin: 0"><li></li><li>可以快速查看直播推流断流的记录与断流原因。</li></ul></td>
-</tr><tr>
-/tr>
+<td><ul style= "margin: 0"><li>可以快速查看直播推流断流的记录与断流原因。</li></ul></td>
+</tr></tr>
 </table>
 
 
@@ -51,8 +50,8 @@
 </tr><tr>
 <td >数据统计</a></td>
 <td><ul style = "margin-bottom: 0px;">
-<li><a href = "https://github.com/zhoudshu/documents/blob/main/cn/cloudlive/console_analysis_increment.md >查询计费项包括流量/带宽、截图、转码、录制、转推所产生的相关数据。</li>
-<li><a href = "https://github.com/zhoudshu/documents/blob/main/cn/cloudlive/console_analysis_opt.md >对直播运营数据进行分析查询。</li></ul></td>
+<li><a href = "https://github.com/zhoudshu/documents/blob/main/cn/cloudlive/console_analysis_increment.md" >查询计费项包括流量/带宽、截图、转码、录制、转推所产生的相关数据。</li>
+<li><a href = "https://github.com/zhoudshu/documents/blob/main/cn/cloudlive/console_analysis_opt.md" >对直播运营数据进行分析查询。</li></ul></td>
 </tr><tr>
 <td><a href = "https://github.com/zhoudshu/documents/blob/main/cn/cloudlive/console_analysis_streamquery.md">流数据查询</a></td>
 <td>可查询单个视频流的推流、播放数据详情，并将数据导出到本地。</td>
@@ -61,8 +60,9 @@
 <td>
 <ul style = "margin-bottom: 0px;">
 <li><a href = "https://github.com/zhoudshu/documents/blob/main/cn/cloudlive/console_mediainfo_picture.md">截图信息下载</li>
-<li><a href = "https://github.com/zhoudshu/documents/blob/main/cn/cloudlive/console_mediainfo_record.md">录制信息下载</li>
-<li>可对前一天、近一周、近一个月或自定义时间段的日志数据包进行下载。</li></ul></td>
+<li><a href = "https://github.com/zhoudshu/documents/blob/main/cn/cloudlive/console_mediainfo_record.md">录制信息下载</li></ul>
+<li>可对前一天、近一周、近一个月或自定义时间段的日志数据包进行下载。</li></td>
+</tr>
 </tr>
 </table>
 
@@ -78,6 +78,6 @@
 </tr><tr>
 <td><a href = "https://github.com/zhoudshu/documents/blob/main/cn/cloudlive/console_tools_webpush.md">Web推流</a></td>
 <td>可实现快速生成推流地址，在线推流测试直播功能。</td>
-/tr></tr>
+</tr></tr>
 </table>
 

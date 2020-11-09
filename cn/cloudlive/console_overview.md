@@ -42,5 +42,6 @@
 
 #### 更改时间粒度
 云直播控制台支持在查看计费带宽/计费流量趋势时更改时间粒度，单击【时间粒度】，单击右侧是粒度时间类型即可。
+
 ![](https://github.com/zhoudshu/documents/blob/main/images/cloudlive/cloudlive_02.png)
 

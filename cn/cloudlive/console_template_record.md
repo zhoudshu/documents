@@ -14,7 +14,9 @@
 ## 创建录制模板
 1. 登录云直播控制台，进入【功能配置】>[【录制配置】]()。
 2. 单击【+】设置基本信息，进行如下配置：
+
 ![](https://github.com/zhoudshu/documents/blob/main/images/cloudlive/cloudlive_03.png)
+
    <table>
    <thead><tr><th>配置项</th><th>配置描述</th></tr></thead>
    <tbody><tr>
@@ -52,6 +54,7 @@
 1. 进入【功能配置】>[【录制配置】]()。
 2. 选择您已创建成功的录制模板，并单击右侧的【编辑】，即可进入修改模板信息。
 3. 单击【保存】即可。
+
 ![](https://github.com/zhoudshu/documents/blob/main/images/cloudlive/cloudlive_03.png)
 
 ## 删除录制模板
@@ -69,6 +72,6 @@
 <span id="que1"></span>
 #### 直播录制后生成的视频名称是按什么规则生成？
 控制台创建的录制模板，回调后生成的录制文件按照默认拼接方式命名，格式为：
-`{StreamID}*{StartYear}-{StartMonth}-{StartDay}-{StartHour}-{StartMinute}-{StartSecond}*{EndYear}-{EndMonth}-{EndDay}-{EndHour}-{EndMinute}-{EndSecond} `
 
-待确定url格式
+`待确定url格式
+{StreamID}*{StartYear}-{StartMonth}-{StartDay}-{StartHour}-{StartMinute}-{StartSecond}*{EndYear}-{EndMonth}-{EndDay}-{EndHour}-{EndMinute}-{EndSecond} `

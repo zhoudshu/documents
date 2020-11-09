@@ -14,7 +14,7 @@
 </tr><tr>
 <td>直播播放</td>
 <td><ul style="margin:0">
-<li>直播地址 StreamName 与推流地址 StreamName 一致才可以播放对应的流。</li></td>
+直播地址 StreamName 与推流地址 StreamName 一致才可以播放对应的流。</td>
 </tr><tr>
 <td>模板配置</td>
 <td>配置模板关联成功后约30分钟生效。</td>

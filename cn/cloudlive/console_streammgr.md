@@ -4,6 +4,7 @@
 
 ### 禁用直播流
 单击【禁用】即可对该推流地址进行禁用，禁用后该地址暂时无法进行推流。
+
 ![](https://github.com/zhoudshu/documents/blob/main/images/cloudlive/cloudlive_03.png)
 
 ### 启用直播流
