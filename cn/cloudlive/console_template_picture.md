@@ -1,4 +1,3 @@
-
 云直播提供截图功能，支持通过控制台配置的截图模板，推流域名关联模板后，在推流过程中截取直播画面，将直播截图存储至后端存储系统中。若该推流域名已关联回调配置，即可在直播过程中触发回调事件后，系统主动发送请求到客户服务器，客户服务器负责应答请求。验证通过后即可获取回调信息的 JSON 数据包。
 本文将向您介绍如何通过控制台创建、修改及删除截图模板。
 
@@ -31,27 +30,10 @@
 <td>推流过程中自动截图间隔时间，默认为10秒，取值范围：5秒 - 300秒。<br>说明：必须为5的倍数</li></td>
 </tr><tr>
 <td>启用智能</td>
-<td>可选择是否开启功能，启用智能后，需配置回调才可收到结果。</td>
-</tr><tr>
-<td>可选择『当前账号』或『其他账号』。</td>
+<td>待支持，可选择是否开启功能，启用智能后，需配置回调才可收到结果。</td>
 </tr><tr>
 <td>文件名</td>
-<td>截图文件名格式，可自定义组合参数拼装而成。默认为：<code>{StreamID}-screenshot-{Hour}-{Minute}-{Second}-{Width}x{Height}{Ext}</code>，其中：
-	<ul style="margin:0">
-		<li>{AppName} ：推流 AppName</li>
-		<li>{PushDomain} ：推流域名</li>
-		<li>{StreamID} ：流 ID</li>
-		<li>{Year} ：截图时间（年）</li>
-		<li>{Month} ：截图时间（月）</li>
-		<li>{Day} ：截图时间（日）</li>
-		<li>{Hour} ：截图时间（时）</li>
-		<li>{Minute} ：截图时间（分）</li>
-		<li>{Second} ：截图时间（秒）</li>
-		<li>{Width} ：图片宽</li>
-		<li>{Height} ：图片高</li><li>{Ext} ：扩展名（.jpg）</li>
-	</ul>说明：只允许[a-z，A-Z，0-9]和符号-，!，_，.，*以及占位符。
-	<br>举例：填写文件名格式为：<code> {Year}-{Month}-{Day}- {Hour}-{Ext}</code>，则在2020年01月01日14:00:00 自动截取直播画面，存储到 COS 中的文件名为：2020010114.jpg</td>
-</tr>
+<td>例子：http://livephls.video.zhoudsh.com/2020-05-22/zds_test-16-51-44.png?txSecret=d6eab4b2773fa0b8a74a&txTime=5FAF8BF8</td>
 </tbody></table>
 
 
@@ -78,3 +60,4 @@
 ## 关联域名
 
  具体操作及相关说明，请参见 [截图配置]()。 
+

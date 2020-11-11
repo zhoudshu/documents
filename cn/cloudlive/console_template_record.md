@@ -38,12 +38,6 @@
        <li>录制 MP4、FLV 或 AAC 格式单个文件时长限制为5分钟 - 120分钟。</li>
        </ul></td>
    </tr><tr>
-   <td>文件保存时长（天）</td>
-   <td>单个录制文件保存最大时长均为1080天，文件保存时长0为永久。</td>
-   </tr><tr>
-   <td>续录超时时长（秒）</td>
-   <td>仅  HLS 格式支持文件推流中断续录，续录超时时长可设置为0s - 1800s。</td>
-   </tr><tr>
    </tr>
    </tbody></table>
 3. 单击【保存】即可。
@@ -74,4 +68,4 @@
 控制台创建的录制模板，回调后生成的录制文件按照默认拼接方式命名，格式为：
 
 `待确定url格式
-{StreamID}*{StartYear}-{StartMonth}-{StartDay}-{StartHour}-{StartMinute}-{StartSecond}*{EndYear}-{EndMonth}-{EndDay}-{EndHour}-{EndMinute}-{EndSecond} `
+`

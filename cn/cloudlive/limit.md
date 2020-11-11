@@ -13,8 +13,7 @@
 <td>云直播服务不限制推流码率，支持常见分辨率以及对应码率。为避免推流卡顿，建议码率不超过 4Mbps。</td>
 </tr><tr>
 <td>直播播放</td>
-<td><ul style="margin:0">
-直播地址 StreamName 与推流地址 StreamName 一致才可以播放对应的流。</td>
+<td>直播地址 StreamName 与推流地址 StreamName 一致才可以播放对应的流。</td>
 </tr><tr>
 <td>模板配置</td>
 <td>配置模板关联成功后约30分钟生效。</td>

@@ -48,15 +48,15 @@
 1.  进入[【域名管理】](https://ccms.zhoudsh.com:9443/control/#/layout/live/livedomain/1604569411261)，单击需配置的**推流域名**或【管理】进入域名详情页。 
 2.  单击【推流配置】，查看【推流配置】标签，单击右侧的【编辑】。
 
-        ![](https://github.com/zhoudshu/documents/blob/main/images/cloudlive/cloudlive_03.png)
+![](https://github.com/zhoudshu/documents/blob/main/images/cloudlive/cloudlive_03.png)
 
 3.  进入推流鉴权配置页，单击
 
-        ![](https://github.com/zhoudshu/documents/blob/main/images/cloudlive/cloudlive_03.png) 按钮选择开启/关闭推流鉴权。
+![](https://github.com/zhoudshu/documents/blob/main/images/cloudlive/cloudlive_03.png) 按钮选择开启/关闭推流鉴权。
 
 4. 修改 KEY ，单击【保存】即可成功生效。
 
-        ![](https://github.com/zhoudshu/documents/blob/main/images/cloudlive/cloudlive_03.png)
+![](https://github.com/zhoudshu/documents/blob/main/images/cloudlive/cloudlive_03.png)
 
 #### 推流地址生成器
 
@@ -70,7 +70,7 @@
   
   ![](https://github.com/zhoudshu/documents/blob/main/images/cloudlive/cloudlive_03.png)
 
-3. 配置成功后，可在 [流管理]( https://ccms.zhoudsh.com:9443/control/#/layout/live/onlinestream/1604570470005) 进行测试、禁用和删除。
+3. 配置成功后，可在 [【流管理】]( https://ccms.zhoudsh.com:9443/control/#/layout/live/onlinestream/1604570470005) 进行测试、禁用和删除。
 4. 生成推流地址即可进行直播推流开播，但是观看直播要获取播放地址，具体请参见 【播放配置】 章节
 
 
