@@ -1,5 +1,6 @@
 # API接口概览
 对系统提供的API接口进行说明，供其它业务系统集成调用
+
 此类接口为当前稳定的版本，推荐大家使用
 
 ## 域名管理接口列表-V3版本
@@ -422,7 +423,7 @@ http://[hostAddress]/ccsp/action/api/v3/GetCdnDomain
 | refer | Refer | - | 防盗链信息，详见【Refer】描述 |
 | headers | List<HeaderItem> | - | Header信息集合，详见【HeaderItem】描述 |
 | caches | List<CacheItem> | - | 缓存信息集合，详见【CacheItem】描述 |
-| origins | List< OriginItem > | - | 源站信息集合，详见【OriginItem】描述 |
+| origins | List<OriginItem> | - | 源站信息集合，详见【OriginItem】描述 |
 | cert | Cert | - | 证书信息对象，详见【Cert】描述 |
 
 
@@ -437,11 +438,7 @@ http://[hostAddress]/ccsp/action/api/v3/GetCdnDomain
 | 名称        | 类型     | 是否必须   |  描述                          |
 | --------- | ------ | ---------------------------------------- | ---- |
 | headerId | Long | - | Header数据唯一标识 |
-| headerKey | String | - |Header Key仅支持  • Content-Disposition
-• Content-Language
-• Access-Control-Allow-Origin
-• Access-Control-Allow-Methods
-• Access-Control-Max-Age |
+| headerKey | String | - | Header Key仅支持  Content-Disposition Content-Language  Access-Control-Allow-Origin  Access-Control-Allow-Methods  Access-Control-Max-Age |
 | headerValue | String | - | 值。当headerKey设置为“Access-Control-Allow-Origin”时，值仅能设置为 * ，或者一个域名（需要以http:// 或https://开头）|
 
 【CacheItem】
@@ -451,11 +448,7 @@ http://[hostAddress]/ccsp/action/api/v3/GetCdnDomain
 | rType | String | - | 缓存类型 1：文件 2：目录|
 | tSuffix | String | - | 内容 |
 | cacheTime | Integer | - | 缓存时间 |
-| timeUnit | String | - | 缓存时间单位
-second：秒
-day：天
-minute：分
-hour：小时 |
+| timeUnit | String | - | 缓存时间单位 second：秒 day：天 minute：分 hour：小时 |
 
 【OriginItem】
 | 名称        | 类型     | 是否必须   |  描述                          |
@@ -698,12 +691,7 @@ http://[hostAddress]/ccsp/action/api/v3/SetCacheConfig
 | rType | String | 是 | 缓存类型 1：文件 2：目录|
 | tSuffix | String | 是 | 内容 |
 | cacheTime | Integer | 是 | 缓存时间 |
-| timeUnit | String | 是 | 缓存时间单位
-second：秒
-day：天
-minute：分
-hour：小时 |
-
+| timeUnit | String | 是 | 缓存时间单位 second：秒 day：天 minute：分 hour：小时 |
 
 
 #### 返回参数
@@ -744,11 +732,7 @@ http://[hostAddress]/ccsp/action/api/v3/EditCacheConfig
 | rType | String | 是 | 缓存类型 1：文件 2：目录|
 | tSuffix | String | 是 | 内容 |
 | cacheTime | Integer | 是 | 缓存时间 |
-| timeUnit | String | 是 | 缓存时间单位
-second：秒
-day：天
-minute：分
-hour：小时 |
+| timeUnit | String | 是 | 缓存时间单位 second：秒 day：天 minute：分 hour：小时 |
 
 
 #### 返回参数
@@ -822,11 +806,7 @@ http://[hostAddress]/ccsp/action/api/v3/SetHttpHeaderConfig
 | 名称      | 类型   | 是否必须   |  描述                              |
 | --------- | ------ | ---------------------------------------- | ---- |
 | domainName | String | 是 | 加速域名，domainId为空时，此值不能为空。|
-| headerKey | String | 是 |Header Key仅支持  • Content-Disposition
-• Content-Language
-• Access-Control-Allow-Origin
-• Access-Control-Allow-Methods
-• Access-Control-Max-Age |
+| headerKey | String | 是 |Header Key仅支持 Content-Disposition  Content-Language  Access-Control-Allow-Origin Access-Control-Allow-Methods Access-Control-Max-Age |
 | headerValue | String | 是 | 值。当headerKey设置为“Access-Control-Allow-Origin”时，值仅能设置为 * ，或者一个域名（需要以http:// 或https://开头）|
 
 #### 返回参数
@@ -863,11 +843,7 @@ http://[hostAddress]/ccsp/action/api/v3/EditHttpHeaderConfig
 | --------- | ------ | ---------------------------------------- | ---- |
 | domainName | String | 是 | 加速域名，domainId为空时，此值不能为空。|
 | configId | Long | 是 | Header数据唯一标识 |
-| headerKey | String | 是 | Header Key仅支持  • Content-Disposition
-• Content-Language
-• Access-Control-Allow-Origin
-• Access-Control-Allow-Methods
-• Access-Control-Max-Age |
+| headerKey | String | 是 | Header Key仅支持  Content-Disposition Content-Language  Access-Control-Allow-Origin Access-Control-Allow-Methods Access-Control-Max-Age |
 | headerValue | String | 是 | 值。当headerKey设置为“Access-Control-Allow-Origin”时，值仅能设置为 * ，或者一个域名（需要以http:// 或https://开头）|
 
 #### 返回参数
@@ -943,9 +919,7 @@ http://[hostAddress]/ccsp/action/api/v3/SetHttpsInfo
 | domainName | String | 是 | 加速域名，domainId为空时，此值不能为空。|
 | privateKey | String | 是 | 私钥 |
 | cert | String | 是 | 证书 |
-| httpsType | Integer | 是 | 配置类型
-1：http 回源 
-2：协议跟随回源 |
+| httpsType | Integer | 是 | 配置类型 1：http 回源 2：协议跟随回源 |
 
 #### 返回参数
 
@@ -1533,7 +1507,7 @@ http://[hostAddress]/ccsp/action/api/v3/DescribeBandwidth
 
 ```
 {
-     "requestId": "ab9220ca-9d01-44d0-bade-fab9139f4d3c",
+    "requestId": "ab9220ca-9d01-44d0-bade-fab9139f4d3c",
     "httpCode": "200",
     "code": "Success",
     "message": "Success",
@@ -1632,7 +1606,7 @@ http://[hostAddress]/ccsp/action/api/v3/DescribeVisitor
 
 ```
 {
-     "requestId": "ab9220ca-9d01-44d0-bade-fab9139f4d3c",
+    "requestId": "ab9220ca-9d01-44d0-bade-fab9139f4d3c",
     "httpCode": "200",
     "code": "Success",
     "message": "Success",
@@ -1681,7 +1655,7 @@ http://[hostAddress]/ccsp/action/api/v3/DescribeOriginBandwidth
 
 ```
 {
-     "requestId": "ab9220ca-9d01-44d0-bade-fab9139f4d3c",
+    "requestId": "ab9220ca-9d01-44d0-bade-fab9139f4d3c",
     "httpCode": "200",
     "code": "Success",
     "message": "Success",
@@ -1730,7 +1704,7 @@ http://[hostAddress]/ccsp/action/api/v3/DescribeOriginFlux
 
 ```
 {
-     "requestId": "ab9220ca-9d01-44d0-bade-fab9139f4d3c",
+    "requestId": "ab9220ca-9d01-44d0-bade-fab9139f4d3c",
     "httpCode": "200",
     "code": "Success",
     "message": "Success",
@@ -1765,7 +1739,7 @@ http://[hostAddress]/ccsp/action/api/v3/DescribeDownloadLog
 
 #### 返回参数
 
-| 名称        | 类型     | 是否必须   |  描述                                       |
+| 名称      | 类型   | 是否必须   |  描述                              |
 | --------- | ------ | ---------------------------------------- | ---- |
 | data | List<Object> | - | 域名对象集合，见【Item】描述 |
 
@@ -1775,10 +1749,17 @@ http://[hostAddress]/ccsp/action/api/v3/DescribeDownloadLog
 | createTime | Date | - | 文件创建时间，格式yyyy-MM-dd HH:mm:ss |
 | fileName | String | - | 文件名称，格式<domain>_<day>.gz |
 | fileLength | Float | - | 文件大小，单位MB，四舍五入保留两位小数 |
-| downloadPath | String | - | 日志下载URL地址。注：下载地址需以日志下载地址接口方式访问获取。在返回的URL地址后，加入API公共参数即可。
+| downloadPath | String | - | 日志下载URL地址。|
+
+注意：
+downloadPath 说明：
+下载地址需以日志下载地址接口方式访问获取。在返回的URL地址后，加入API公共参数即可。
+
 例如：返回的某URL为：http://xxx/ccsp/action/api/downloadLog?clusterServerIp=xx.10.10.xx&day=20170227&fileName=xxx.com_20170227010000.gz
+
 加入公共参数后：
-http://xxx/ccsp/action/api/downloadLog?clusterServerIp=xx.10.10.xx&day=20170227&fileName=xxx.com_20170227010000.gz &accessKeyId=NGAA-xxx&signature=GkPCONEaaxxxx&timestamp=1488190799470 |
+
+http://xxx/ccsp/action/api/downloadLog?clusterServerIp=xx.10.10.xx&day=20170227&fileName=xxx.com_20170227010000.gz &accessKeyId=NGAA-xxx&signature=GkPCONEaaxxxx&timestamp=1488190799470
 
 #### 返回样例
 
@@ -1802,7 +1783,7 @@ http://xxx/ccsp/action/api/downloadLog?clusterServerIp=xx.10.10.xx&day=20170227&
             "fileLength": "0.42",
             "downloadPath": "http://xxx/ccsp/action/api/downloadLog?clusterServerIp=xx.10.10.xx&day=20170227&fileName=xxx.com_20170227010000.gz"
        
-}
+        }
     ]
 }
 ```
@@ -1838,7 +1819,7 @@ http://[hostAddress]/ccsp/action/api/v3/queryCdnIp
 
 ```
 {
-"requestId":"1b1b9a4a-5fcc-4370-9060-e9f8696b9e4a",
+    "requestId":"1b1b9a4a-5fcc-4370-9060-e9f8696b9e4a",
     "httpCode":"200",
     "code":"Success",
     "message":"Success",

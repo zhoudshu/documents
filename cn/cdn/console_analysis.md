@@ -18,7 +18,7 @@
 
 带宽对比页面可以选择需要对比的时间，协议类型，频道，运营商，省份信息。实现对不同时间的服务带宽对比。以便于发现带宽大范围波动。
 
-![](https://github.com/zhoudshu/documents/blob/main/images/cdn/cdn_01.png)
+![](https://github.com/zhoudshu/documents/blob/main/images/cdn/cdn_11.png)
 
 ### 2.3 回源统计
 根据上层节点日志中MISS记录计算回源部分的数据，包括回源带宽，回源响应时间信息。
