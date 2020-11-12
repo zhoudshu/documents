@@ -439,7 +439,7 @@ http://[hostAddress]/ccsp/action/api/v3/GetCdnDomain
 | --------- | ------ | ---------------------------------------- | ---- |
 | headerId | Long | - | Header数据唯一标识 |
 | headerKey | String | - | Header Key仅支持  Content-Disposition Content-Language  Access-Control-Allow-Origin  Access-Control-Allow-Methods  Access-Control-Max-Age |
-| headerValue | String | - | 值。当headerKey设置为“Access-Control-Allow-Origin”时，值仅能设置为 * ，或者一个域名（需要以http:// 或https://开头）|
+| headerValue | String | - | 当headerKey设置为“Access-Control-Allow-Origin”时，值仅能设置为 * ，或者一个域名（需要以http:// 或https://开头）|
 
 【CacheItem】
 | 名称        | 类型     | 是否必须   |  描述                          |
@@ -805,9 +805,9 @@ http://[hostAddress]/ccsp/action/api/v3/SetHttpHeaderConfig
 
 | 名称      | 类型   | 是否必须   |  描述                              |
 | --------- | ------ | ---------------------------------------- | ---- |
-| domainName | String | 是 | 加速域名，domainId为空时，此值不能为空。|
+| domainName | String | 是 | 加速域名 |
 | headerKey | String | 是 |Header Key仅支持 Content-Disposition  Content-Language  Access-Control-Allow-Origin Access-Control-Allow-Methods Access-Control-Max-Age |
-| headerValue | String | 是 | 值。当headerKey设置为“Access-Control-Allow-Origin”时，值仅能设置为 * ，或者一个域名（需要以http:// 或https://开头）|
+| headerValue | String | 是 | 当headerKey设置为“Access-Control-Allow-Origin”时，值仅能设置为 * ，或者一个域名（需要以http:// 或https://开头）|
 
 #### 返回参数
 
@@ -841,10 +841,10 @@ http://[hostAddress]/ccsp/action/api/v3/EditHttpHeaderConfig
 
 | 名称      | 类型   | 是否必须   |  描述                              |
 | --------- | ------ | ---------------------------------------- | ---- |
-| domainName | String | 是 | 加速域名，domainId为空时，此值不能为空。|
+| domainName | String | 是 | 加速域名 |
 | configId | Long | 是 | Header数据唯一标识 |
 | headerKey | String | 是 | Header Key仅支持  Content-Disposition Content-Language  Access-Control-Allow-Origin Access-Control-Allow-Methods Access-Control-Max-Age |
-| headerValue | String | 是 | 值。当headerKey设置为“Access-Control-Allow-Origin”时，值仅能设置为 * ，或者一个域名（需要以http:// 或https://开头）|
+| headerValue | String | 是 | 当headerKey设置为“Access-Control-Allow-Origin”时，值仅能设置为 * ，或者一个域名（需要以http:// 或https://开头）|
 
 #### 返回参数
 
@@ -916,7 +916,7 @@ http://[hostAddress]/ccsp/action/api/v3/SetHttpsInfo
 
 | 名称      | 类型   | 是否必须   |  描述                              |
 | --------- | ------ | ---------------------------------------- | ---- |
-| domainName | String | 是 | 加速域名，domainId为空时，此值不能为空。|
+| domainName | String | 是 | 加速域名 |
 | privateKey | String | 是 | 私钥 |
 | cert | String | 是 | 证书 |
 | httpsType | Integer | 是 | 配置类型 1：http 回源 2：协议跟随回源 |
@@ -1735,7 +1735,7 @@ http://[hostAddress]/ccsp/action/api/v3/DescribeDownloadLog
 | 名称      | 类型   | 是否必须   |  描述                              |
 | --------- | ------ | ---------------------------------------- | ---- |
 | domain | String | 是 | 频道列表，支持多频道，以英文逗号”,”分隔，最多支持10个频道同时查询 |
-| day | Date | 是 | |日期，格式yyyy-MM-dd |
+| day | Date | 是 | 日期，格式yyyy-MM-dd |
 
 #### 返回参数
 
@@ -1747,7 +1747,7 @@ http://[hostAddress]/ccsp/action/api/v3/DescribeDownloadLog
 | 名称   | 类型     | 是否必须   |  描述                    |
 | --------- | ------ | ------------------------------------ | ---- |
 | createTime | Date | - | 文件创建时间，格式yyyy-MM-dd HH:mm:ss |
-| fileName | String | - | 文件名称，格式<domain>_<day>.gz |
+| fileName | String | - | 文件名称，格式domain_day.gz |
 | fileLength | Float | - | 文件大小，单位MB，四舍五入保留两位小数 |
 | downloadPath | String | - | 日志下载URL地址。|
 
