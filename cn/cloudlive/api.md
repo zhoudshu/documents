@@ -273,7 +273,7 @@ http://[hostAddress]/ccsp/action/api/v3/GetLiveOnlineStreamList
 
 | 名称        | 类型     | 是否必须   |  描述                                       |
 | --------- | ------ | ---------------------------------------- | ---- |
-| data | String | - | 域名对象集合，见【Item】描述 |
+| data | List<Object> | - | 域名对象集合，见【Item】描述 |
 
 【Item】
 | 名称   | 类型     | 是否必须   |  描述                    |
@@ -334,7 +334,7 @@ http://[hostAddress]/ccsp/action/api/v3/GetLiveHistoryStreamList
 
 | 名称        | 类型     | 是否必须   |  描述                          |
 | --------- | ------ | ---------------------------------------- | ---- |
-| data | String | - | 域名对象集合，见【Item】描述 |
+| data | List<Object> | - | 域名对象集合，见【Item】描述 |
 
 【Item】
 
