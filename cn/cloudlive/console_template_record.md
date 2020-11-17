@@ -53,7 +53,7 @@
 
 ## 删除录制模板
 1. 进入【功能配置】>【录制配置】。
-2. 选择您已创建成功的录制模板，单击上方的![]()删除按钮。
+2. 选择您已创建成功的录制模板，单击上方的删除按钮。
 3. 确认是否删除当前录制模板，单击【确定】即可成功删除。
 
 ![](https://github.com/zhoudshu/documents/blob/main/images/cloudlive/cloudlive_03.png)
