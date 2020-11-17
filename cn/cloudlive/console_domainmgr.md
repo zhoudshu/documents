@@ -17,7 +17,7 @@
 	2. 若您需添加**播放域名**：输入域名，选择域名类型为【播放域名】，单击【确定】即可。
 	3. 若您需添加**静态域名**：输入域名，选择域名类型为【静态域名】，单击【确定】即可。
 
-![](https://github.com/zhoudshu/documents/blob/main/images/cloudlive/cloudlive_02.png)
+![](https://github.com/zhoudshu/documents/blob/main/images/cloudlive/cloudlive_03.png)
 
 >!注意
 >- 域名的位数限制为29位，暂不支持大写的域名，请输入不超过**29位**的小写域名地址。
