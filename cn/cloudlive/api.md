@@ -102,7 +102,7 @@ http://[hostAddress]/ccsp/action/api/v3/Action?xxx&accessKeyId=xxx&timestamp=xxx
 | code | String | 是 | 本次请求服务执行状态码，具体内容，详见返回状态码小节。|
 | message | String | 是 | 本次请求的描述信息。|
 | totalCount | int | 否 | 查询结果总数（查询类接口用于客户端分页用）|
-| data | List<Object> | 否 | 返回的数据实体对象集合 |
+| data | List | 否 | 返回的数据实体对象集合 |
 
 ### 应答样例
 #### 成功样例
@@ -273,9 +273,10 @@ http://[hostAddress]/ccsp/action/api/v3/GetLiveOnlineStreamList
 
 | 名称        | 类型     | 是否必须   |  描述                                       |
 | --------- | ------ | ---------------------------------------- | ---- |
-| data | List<Object> | - | 域名对象集合，见【Item】描述 |
+| data | List | - | 域名对象集合，见【Item】描述 |
 
 【Item】
+
 | 名称   | 类型     | 是否必须   |  描述                    |
 | --------- | ------ | ------------------------------------ | ---- |
 | domain | String | - | 推流域名 |
@@ -334,7 +335,7 @@ http://[hostAddress]/ccsp/action/api/v3/GetLiveHistoryStreamList
 
 | 名称        | 类型     | 是否必须   |  描述                          |
 | --------- | ------ | ---------------------------------------- | ---- |
-| data | List<Object> | - | 域名对象集合，见【Item】描述 |
+| data | List | - | 域名对象集合，见【Item】描述 |
 
 【Item】
 
@@ -578,21 +579,21 @@ https://ccsp-test.sinocache.net/action/api/live/onlineViewers?accessKeyId=NGAA-t
 
 | 名称        | 类型     | 是否必须   |  描述                          |
 | --------- | ------ | ---------------------------------------- | ---- |
-| result | List<Item> | 是 | 返回结果集 |
+| result | List | 是 | 返回结果集 |
 
 结果集
 
 | 名称        | 类型     | 是否必须   |  描述                          |
 | --------- | ------ | ---------------------------------------- | ---- |
 | domain | String | 是 | 拉流域名 |
-| streamData | List<Item> | 是 | 直播流数据 |
+| streamData | List | 是 | 直播流数据 |
 | &emsp;stream | String | 是 | 直播流名 |
 | &emsp;timestamp | String | 是 | 粒度统计的时间 |
 | &emsp;totalValue | String | 是 | 总在线观看人数 |
-| &emsp;provinceData| List<Item> | 否 | 分省份数据 开启分省份统计时提供，开启运营商统计时也提供数据 |
+| &emsp;provinceData| List | 否 | 分省份数据 开启分省份统计时提供，开启运营商统计时也提供数据 |
 | &emsp;&emsp;province | String | 否 | 省份缩写 开启运营商统计时也提供数据 |
 | &emsp;&emsp;Value | String | 否  | 在线观看人数, 未开启省份统计开启运营商统计时不需要提供此数据 |
-| &emsp;ispData | List<Item> | 否 | 分运营商数据 开启分运营商统计时提供 |
+| &emsp;ispData | List | 否 | 分运营商数据 开启分运营商统计时提供 |
 | &emsp;&emsp;isp | String | 否  | 运营商缩写 |
 | &emsp;&emsp;value | String | 否  | 在线观看人数 |
 
@@ -682,23 +683,24 @@ https://ccsp-test.sinocache.net/action/api/live/flow?accessKeyId=NGAA-test&times
 
 | 名称      | 类型   | 是否必须   |  描述                              |
 | --------- | ------ | ---------------------------------------- | ---- |
-| result | List<Item> | 是 | 返回结果集 |
+| result | List | 是 | 返回结果集 |
 
-结果集:
+结果集
+
 | 名称      | 类型   | 是否必须   |  描述                              |
 | --------- | ------ | ---------------------------------------- | ---- |
 | domain | String | 是 | 拉流域名 |
-| streamData | List<Item> | 是 | 直播流数据 |
+| streamData | List | 是 | 直播流数据 |
 | &emsp;stream | String | 是 | 直播流名 |
 | &emsp;timestamp | String | 是 | 粒度统计的时间 |
 | &emsp;totalValue | String | 是 | 总流量 流量值，单位为MB，保留两位小数 |
-| &emsp;provinceData| List<Item> | 否 | 开启分省份统计时提供，开启运营商/终端统计时也提供数据 |
+| &emsp;provinceData| List | 否 | 开启分省份统计时提供，开启运营商/终端统计时也提供数据 |
 | &emsp;&emsp;province | String | 否 | 省份缩写 开启运营商统计时也提供数据 |
 | &emsp;&emsp;Value | String | 否  | 流量值，单位为MB，保留两位小数，未开启省份统计开启运营商/终端统计时不需要提供此数据 |
-| &emsp;ispData | List<Item> | 否 | 分运营商数据 开启分运营商统计时提供 |
+| &emsp;ispData | List | 否 | 分运营商数据 开启分运营商统计时提供 |
 | &emsp;&emsp;isp | String | 否  | 运营商缩写 |
 | &emsp;&emsp;value | String | 否  | 流量值，单位为MB，保留两位小数 |
-| &emsp;deviceData | List<Item> | 否 | 分终端数据 开启分终端统计时提供 |
+| &emsp;deviceData | List | 否 | 分终端数据 开启分终端统计时提供 |
 | &emsp;&emsp;deviceType | String | 否  | 终端类型 pc,mobile,other |
 | &emsp;&emsp;value | String | 否  | 流量值，单位为MB，保留两位小数 |
 
@@ -790,23 +792,24 @@ https://ccsp-test.sinocache.net/action/api/live/bandwidth?accessKeyId=NGAA-test&
 
 | 名称        | 类型     | 是否必须   |  描述                          |
 | --------- | ------ | ---------------------------------------- | ---- |
-| result | List<Item> | 是 | 返回结果集 |
+| result | List | 是 | 返回结果集 |
 
-结果集:
+结果集
+
 | 名称        | 类型     | 是否必须   |  描述                          |
 | --------- | ------ | ---------------------------------------- | ---- |
 | domain | String | 是 | 拉流域名 |
-| streamData | List<Item> | 是 | 直播流数据 |
+| streamData | List | 是 | 直播流数据 |
 | &emsp;stream | String | 是 | 直播流名 |
 | &emsp;timestamp | String | 是 | 粒度统计的时间 |
 | &emsp;value | String | 是 | 总 流量值，单位为MB，保留两位小数 |
-| &emsp;provinceData| List<Item> | 否 | 开启分省份统计时提供，开启运营商/终端统计时也提供数据 |
+| &emsp;provinceData| List | 否 | 开启分省份统计时提供，开启运营商/终端统计时也提供数据 |
 | &emsp;&emsp; province | String | 否 | 省份缩写 开启运营商统计时也提供数据 |
 | &emsp;&emsp;Value | String | 否  | 带宽值，单位为Mbps，保留两位小数，未开启省份统计开启运营商/终端统计时不需要提供此数据 |
-| &emsp;ispData | List<Item> | 否 | 分运营商数据 开启分运营商统计时提供 |
+| &emsp;ispData | List | 否 | 分运营商数据 开启分运营商统计时提供 |
 | &emsp;&emsp;isp | String | 否  | 运营商缩写 |
 | &emsp;&emsp;value | String | 否  | 带宽值，单位为Mbps，保留两位小数 |
-| &emsp;deviceData | List<Item> | 否 | 分终端数据 开启分终端统计时提供 |
+| &emsp;deviceData | List | 否 | 分终端数据 开启分终端统计时提供 |
 | &emsp;&emsp;deviceType | String | 否  | 终端类型 pc,mobile,other |
 | &emsp;&emsp;value | String | 否  | 带宽值，单位为Mbps，保留两位小数 |
 
@@ -895,23 +898,24 @@ https://ccsp-test.sinocache.net/action/api/live/uv?accessKeyId=NGAA-test&timesta
 
 | 名称        | 类型     | 是否必须   |  描述                                       |
 | --------- | ------ | ---------------------------------------- | ---- |
-| result | List<Item> | 是 | 返回结果集 |
+| result | List | 是 | 返回结果集 |
 
-结果集:
+结果集
+
 | 名称        | 类型     | 是否必须   |  描述                                       |
 | --------- | ------ | ---------------------------------------- | ---- |
 | domain | String | 是 | 拉流域名 |
-| streamData | List<Item> | 是 | 直播流数据 |
+| streamData | List | 是 | 直播流数据 |
 |   stream | String | 是 | 直播流名 |
 |   timestamp | String | 是 | 粒度统计的时间 |
 |   totalValue | String | 是 | 总ip数 Ip数，单位为个 |
-|   provinceData| List<Item> | 否 | 开启分省份统计时提供，开启运营商/终端统计时也提供数据 |
+|   provinceData| List | 否 | 开启分省份统计时提供，开启运营商/终端统计时也提供数据 |
 |       province | String | 否 | 省份缩写 开启运营商统计时也提供数据 |
 |       Value | String | 否  | Ip数，单位为个，未开启省份统计开启运营商/终端统计时不需要提供此数据 |
-|   ispData | List<Item> | 否 | 分运营商数据 开启分运营商统计时提供 |
+|   ispData | List | 否 | 分运营商数据 开启分运营商统计时提供 |
 |       isp | String | 否  | 运营商缩写 |
 |       value | String | 否  |  Ip数，单位为个 |
-|   deviceData | List<Item> | 否 | 分终端数据 开启分终端统计时提供 |
+|   deviceData | List | 否 | 分终端数据 开启分终端统计时提供 |
 |       deviceType | String | 否  | 终端类型 pc,mobile,other |
 |       value | String | 否  | Ip数，单位为个 |
 
@@ -1001,23 +1005,24 @@ https://ccsp-test.sinocache.net/action/api/live/pv?accessKeyId=NGAA-test&timesta
 
 | 名称        | 类型     | 是否必须   |  描述                          |
 | --------- | ------ | ---------------------------------------- | ---- |
-| result | List<Item> | 是 | 返回结果集 |
+| result | List | 是 | 返回结果集 |
 
-结果集:
+结果集
+
 | 名称      | 类型   | 是否必须   |  描述                              |
 | --------- | ------ | ---------------------------------------- | ---- |
 | domain | String | 是 | 拉流域名 |
-| streamData | List<Item> | 是 | 直播流数据 |
+| streamData | List | 是 | 直播流数据 |
 |   stream | String | 是 | 直播流名 |
 |   timestamp | String | 是 | 粒度统计的时间 |
 |   totalValue | String | 是 | 总请求数单位为个 |
-|   provinceData | List<Item> | 否 | 开启分省份统计时提供，开启运营商/终端统计时也提供数据 |
+|   provinceData | List | 否 | 开启分省份统计时提供，开启运营商/终端统计时也提供数据 |
 |       province | String | 否 | 省份缩写 开启运营商统计时也提供数据 |
 |       Value | String | 否  | 请求数单位为个，未开启省份统计开启运营商/终端统计时不需要提供此数据 |
-|   ispData | List<Item> | 否 | 分运营商数据 开启分运营商统计时提供 |
+|   ispData | List | 否 | 分运营商数据 开启分运营商统计时提供 |
 |       isp | String | 否  | 运营商缩写 |
 |       value | String | 否  | 请求数单位为个 |
-|   deviceData | List<Item> | 否 | 分终端数据 开启分终端统计时提供 |
+|   deviceData | List | 否 | 分终端数据 开启分终端统计时提供 |
 |       deviceType | String | 否  | 终端类型 pc,mobile,other |
 |       value | String | 否  | 请求数单位为个 |
 

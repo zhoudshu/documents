@@ -1,3 +1,5 @@
+# 地址生成器
+
 云直播控制台提供地址生成器功能，支持通过填写地址拼接信息，辅助用户快速生成推流/播放地址。其中直播地址主要由域名（domain）、应用名称（AppName）、流名称（StreamName）以及鉴权 Key 组成。
 
 ![](https://main.qcloudimg.com/raw/891a0d8db4d94cd92498d0d0d3944ade.png)

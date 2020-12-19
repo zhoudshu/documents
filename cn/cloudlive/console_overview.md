@@ -1,10 +1,10 @@
 
-## 概览
+# 概览
 
 单击左侧导航栏【概览】，可以查看直播的实时数据、并发连接数以及近几天的计费宽带和计费流量的趋势等相关数据，也可更改时间粒度
 ![](https://github.com/zhoudshu/documents/blob/main/images/cloudlive/cloudlive_01.png)
 
-### 今日数据
+## 今日数据
 
 主要展示当日视频直播的下行带宽峰值、下行流量使用量情况，并统计当日并发连接情况。
 
@@ -24,7 +24,7 @@
 </tr>
 </tbody></table>
 
-### 使用趋势
+## 使用趋势
 
 主要展示今天、昨天、近7天、近30天的直播用量趋势，展示数据包括“带宽趋势”和“流量趋势”。
 
@@ -40,7 +40,7 @@
 </tr>
 </tbody></table>
 
-#### 更改时间粒度
+### 更改时间粒度
 云直播控制台支持在查看计费带宽/计费流量趋势时更改时间粒度，单击【时间粒度】，单击右侧是粒度时间类型即可。
 
 ![](https://github.com/zhoudshu/documents/blob/main/images/cloudlive/cloudlive_02.png)

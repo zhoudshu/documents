@@ -29,6 +29,7 @@ usedSize	long	已用大小（单位:byte）
 
 ### 返回样例
 
+```
 {
 
     "requestId": "d82790a3-ed25-476f-9137-c029edd29abc",
@@ -62,6 +63,7 @@ usedSize	long	已用大小（单位:byte）
     ]
 
 }
+```
 
 ## 标准aws3接口支持清单
 
@@ -81,7 +83,7 @@ Endpoint :  http://xls3.xxxx.com
 
 密钥见 API连接信息
 
-### Python版本 aws3接口样例
+## Python版本 aws3接口样例
 ### 使用说明
 - 安装依赖 .[SDK](https://github.com/zhoudshu/documents/blob/main/cn/objectstore/sdk.md)
 

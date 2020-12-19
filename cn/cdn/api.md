@@ -133,7 +133,7 @@ http://[hostAddress]/ccsp/action/api/v3/Action?xxx&accessKeyId=xxx&timestamp=xxx
 | code | String | 是 | 本次请求服务执行状态码，具体内容，详见返回状态码小节。|
 | message | String | 是 | 本次请求的描述信息。|
 | totalCount | int | 否 | 查询结果总数（查询类接口用于客户端分页用）|
-| data | List<Object> | 否 | 返回的数据实体对象集合 |
+| data | List | 否 | 返回的数据实体对象集合 |
 
 ### 应答样例
 #### 成功样例
@@ -214,7 +214,7 @@ http://[hostAddress]/ccsp/action/api/v3/AddCdnDomain
 
 | 名称      | 类型   | 是否必须   |  描述                              |
 | --------- | ------ | ---------------------------------------- | ---- |
-| data | List<Object> | - | 返回的数据实体对象集合 此接口为空数组对象 |
+| data | List | - | 返回的数据实体对象集合 此接口为空数组对象 |
 
 
 #### 返回样例
@@ -247,7 +247,7 @@ http://[hostAddress]/ccsp/action/api/v3/StopCdnDomain
 
 | 名称        | 类型     | 是否必须   |  描述                                       |
 | --------- | ------ | ---------------------------------------- | ---- |
-| data | List<Object> | - | 返回的数据实体对象集合 此接口为空数组对象 |
+| data | List | - | 返回的数据实体对象集合 此接口为空数组对象 |
 
 
 #### 返回样例
@@ -280,7 +280,7 @@ http://[hostAddress]/ccsp/action/api/v3/StartCdnDomain
 
 | 名称        | 类型     | 是否必须   |  描述                                       |
 | --------- | ------ | ---------------------------------------- | ---- |
-| data | List<Object> | - | 返回的数据实体对象集合 此接口为空数组对象 |
+| data | List | - | 返回的数据实体对象集合 此接口为空数组对象 |
 
 
 #### 返回样例
@@ -313,7 +313,7 @@ http://[hostAddress]/ccsp/action/api/v3/DeleteCdnDomain
 
 | 名称        | 类型     | 是否必须   |  描述                                       |
 | --------- | ------ | ---------------------------------------- | ---- |
-| data | List<Object> | - | 返回的数据实体对象集合 此接口为空数组对象 |
+| data | List | - | 返回的数据实体对象集合 此接口为空数组对象 |
 
 
 #### 返回样例
@@ -343,12 +343,13 @@ http://[hostAddress]/ccsp/action/api/v3/GetCdnDomainList
 #### 返回参数
 
 | 名称        | 类型     | 是否必须   |  描述                          |
-| --------- | ------ | ---------------------------------------- | ---- |
-| data | List<Item> | - | 域名对象集合，见【Item】描述 |
+| --------- | ------ | -------------- | ---- |
+| data | List | - | 域名对象集合，见【Item】描述 |
 
 【Item】
-| 名称        | 类型     | 是否必须   |  描述                          |
-| --------- | ------ | ---------------------------------------- | ---- |
+
+| 名称      | 类型   | 是否必须   |  描述                          |
+| --------- | ------ | -----------| ---- |
 | id | Long | - | 加速域名数据唯一标识 |
 | domainName | String | - | 加速域名 |
 | icpNumber | String | - | 域名备案号 |
@@ -408,9 +409,10 @@ http://[hostAddress]/ccsp/action/api/v3/GetCdnDomain
 
 | 名称        | 类型     | 是否必须   |  描述                          |
 | --------- | ------ | ---------------------------------------- | ---- |
-| data | List<Item> | - | 域名对象集合，见【Item】描述 |
+| data | List | - | 域名对象集合，见【Item】描述 |
 
 【Item】
+
 | 名称        | 类型     | 是否必须   |  描述                          |
 | --------- | ------ | ---------------------------------------- | ---- |
 | domainId | Long | - | 加速域名数据唯一标识 |
@@ -421,13 +423,14 @@ http://[hostAddress]/ccsp/action/api/v3/GetCdnDomain
 | cname | String | - | CDN分配的后辍加速域名 |
 | createTime | Date | - | 创建时间,格式yyyy-MM-dd HH:mm:ss |
 | refer | Refer | - | 防盗链信息，详见【Refer】描述 |
-| headers | List<HeaderItem> | - | Header信息集合，详见【HeaderItem】描述 |
-| caches | List<CacheItem> | - | 缓存信息集合，详见【CacheItem】描述 |
-| origins | List<OriginItem> | - | 源站信息集合，详见【OriginItem】描述 |
+| headers | List | - | Header信息集合，详见【HeaderItem】描述 |
+| caches | List | - | 缓存信息集合，详见【CacheItem】描述 |
+| origins | List | - | 源站信息集合，详见【OriginItem】描述 |
 | cert | Cert | - | 证书信息对象，详见【Cert】描述 |
 
 
 【Refer】
+
 | 名称        | 类型     | 是否必须   |  描述                          |
 | --------- | ------ | ---------------------------------------- | ---- |
 | refChain | String | - | 防盗链类型 onVisit：白名单 offVisit：黑名单|
@@ -435,6 +438,7 @@ http://[hostAddress]/ccsp/action/api/v3/GetCdnDomain
 | refInclude | String | - | 是否包含空Refer 0：不包含 1：包含 |
 
 【HeaderItem】
+
 | 名称        | 类型     | 是否必须   |  描述                          |
 | --------- | ------ | ---------------------------------------- | ---- |
 | headerId | Long | - | Header数据唯一标识 |
@@ -442,6 +446,7 @@ http://[hostAddress]/ccsp/action/api/v3/GetCdnDomain
 | headerValue | String | - | 当headerKey设置为“Access-Control-Allow-Origin”时，值仅能设置为 * ，或者一个域名（需要以http:// 或https://开头）|
 
 【CacheItem】
+
 | 名称        | 类型     | 是否必须   |  描述                          |
 | --------- | ------ | ---------------------------------------- | ---- |
 | cacheId | Long | - | 缓存数据唯一标识 |
@@ -451,6 +456,7 @@ http://[hostAddress]/ccsp/action/api/v3/GetCdnDomain
 | timeUnit | String | - | 缓存时间单位 second：秒 day：天 minute：分 hour：小时 |
 
 【OriginItem】
+
 | 名称        | 类型     | 是否必须   |  描述                          |
 | --------- | ------ | ---------------------------------------- | ---- |
 | originId | Long | - | 源站数据唯一标识 |
@@ -458,6 +464,7 @@ http://[hostAddress]/ccsp/action/api/v3/GetCdnDomain
 | port | Integer | - | 源站端口 |
 
 【Cert】
+
 | 名称        | 类型     | 是否必须   |  描述                          |
 | --------- | ------ | ---------------------------------------- | ---- |
 | certId | Long | - | 证书数据唯一标识 |
@@ -548,7 +555,7 @@ http://[hostAddress]/ccsp/action/api/v3/EditOriginConfig
 
 | 名称        | 类型     | 是否必须   |  描述                                       |
 | --------- | ------ | ---------------------------------------- | ---- |
-| data | List<Object> | - | 返回的数据实体对象集合 此接口为空数组对象 |
+| data | List | - | 返回的数据实体对象集合 此接口为空数组对象 |
 
 
 #### 返回样例
@@ -583,7 +590,7 @@ http://[hostAddress]/ccsp/action/api/v3/DeleteOriginConfig
 
 | 名称        | 类型     | 是否必须   |  描述                          |
 | --------- | ------ | ---------------------------------------- | ---- |
-| data | List<Object> | - | 返回的数据实体对象集合 此接口为空数组对象 |
+| data | List | - | 返回的数据实体对象集合 此接口为空数组对象 |
 
 
 #### 返回样例
@@ -622,7 +629,7 @@ http://[hostAddress]/ccsp/action/api/v3/SetRefer
 
 | 名称      | 类型     | 是否必须   |  描述                            |
 | --------- | ------ | ---------------------------------------- | ---- |
-| data | List<Object> | - | 返回的数据实体对象集合 此接口为空数组对象 |
+| data | List | - | 返回的数据实体对象集合 此接口为空数组对象 |
 
 
 #### 返回样例
@@ -658,7 +665,7 @@ http://[hostAddress]/ccsp/action/api/v3/DeleteRefer
 
 | 名称      | 类型     | 是否必须   |  描述                            |
 | --------- | ------ | ---------------------------------------- | ---- |
-| data | List<Object> | - | 返回的数据实体对象集合 此接口为空数组对象 |
+| data | List | - | 返回的数据实体对象集合 此接口为空数组对象 |
 
 
 #### 返回样例
@@ -698,7 +705,7 @@ http://[hostAddress]/ccsp/action/api/v3/SetCacheConfig
 
 | 名称      | 类型     | 是否必须   |  描述                            |
 | --------- | ------ | ---------------------------------------- | ---- |
-| data | List<Object> | - | 返回的数据实体对象集合 此接口为空数组对象 |
+| data | List | - | 返回的数据实体对象集合 此接口为空数组对象 |
 
 
 #### 返回样例
@@ -739,7 +746,7 @@ http://[hostAddress]/ccsp/action/api/v3/EditCacheConfig
 
 | 名称      | 类型   | 是否必须   |  描述                            |
 | --------- | ------ | ---------------------------------------- | ---- |
-| data | List<Object> | - | 返回的数据实体对象集合 此接口为空数组对象 |
+| data | List | - | 返回的数据实体对象集合 此接口为空数组对象 |
 
 
 #### 返回样例
@@ -777,7 +784,7 @@ http://[hostAddress]/ccsp/action/api/v3/DeleteCacheConfig
 
 | 名称      | 类型   | 是否必须   |  描述                            |
 | --------- | ------ | ---------------------------------------- | ---- |
-| data | List<Object> | - | 返回的数据实体对象集合 此接口为空数组对象 |
+| data | List | - | 返回的数据实体对象集合 此接口为空数组对象 |
 
 
 #### 返回样例
@@ -813,7 +820,7 @@ http://[hostAddress]/ccsp/action/api/v3/SetHttpHeaderConfig
 
 | 名称      | 类型     | 是否必须   |  描述                            |
 | --------- | ------ | ---------------------------------------- | ---- |
-| data | List<Object> | - | 返回的数据实体对象集合 此接口为空数组对象 |
+| data | List | - | 返回的数据实体对象集合 此接口为空数组对象 |
 
 
 #### 返回样例
@@ -850,7 +857,7 @@ http://[hostAddress]/ccsp/action/api/v3/EditHttpHeaderConfig
 
 | 名称      | 类型   | 是否必须   |  描述                            |
 | --------- | ------ | ---------------------------------------- | ---- |
-| data | List<Object> | - | 返回的数据实体对象集合 此接口为空数组对象 |
+| data | List | - | 返回的数据实体对象集合 此接口为空数组对象 |
 
 
 #### 返回样例
@@ -887,7 +894,7 @@ http://[hostAddress]/ccsp/action/api/v3/DeleteHttpHeaderConfig
 
 | 名称      | 类型   | 是否必须   |  描述                            |
 | --------- | ------ | ---------------------------------------- | ---- |
-| data | List<Object> | - | 返回的数据实体对象集合 此接口为空数组对象 |
+| data | List | - | 返回的数据实体对象集合 此接口为空数组对象 |
 
 
 #### 返回样例
@@ -925,7 +932,7 @@ http://[hostAddress]/ccsp/action/api/v3/SetHttpsInfo
 
 | 名称      | 类型     | 是否必须   |  描述                            |
 | --------- | ------ | ---------------------------------------- | ---- |
-| data | List<Object> | - | 返回的数据实体对象集合 此接口为空数组对象 |
+| data | List | - | 返回的数据实体对象集合 此接口为空数组对象 |
 
 
 #### 返回样例
@@ -960,7 +967,7 @@ http://[hostAddress]/ccsp/action/api/v3/DeleteHttpsInfo
 
 | 名称      | 类型   | 是否必须   |  描述                            |
 | --------- | ------ | ---------------------------------------- | ---- |
-| data | List<Object> | - | 返回的数据实体对象集合 此接口为空数组对象 |
+| data | List | - | 返回的数据实体对象集合 此接口为空数组对象 |
 
 
 #### 返回样例
@@ -975,81 +982,6 @@ http://[hostAddress]/ccsp/action/api/v3/DeleteHttpsInfo
     "data": []
 }
 ```
-
-/****
-### IP黑白名单设置
-#### 请求地址
-http://[hostAddress]/ccsp/action/api/v3/SetAccessIp
-
-#### 接口描述
-
-设置IP黑白名单。
-
-#### 请求参数
-
-| 名称      | 类型   | 是否必须   |  描述                              |
-| --------- | ------ | ---------------------------------------- | ---- |
-| domainId | Long | 否 |  加速域名唯一标识，domainName为空时，此值不能为空。|
-| domainName | String | 否 | 加速域名，domainId为空时，此值不能为空。|
-| ipAccRest | String | 是 | 类型 onVisit：白名单 offVisit：黑名单 |
-| ipAccRestContent | String | 是 | IP黑白名单内容，多个IP使用逗号连接 |
-
-#### 返回参数
-
-| 名称      | 类型     | 是否必须   |  描述                            |
-| --------- | ------ | ---------------------------------------- | ---- |
-| data | List<Object> | - | 返回的数据实体对象集合 此接口为空数组对象 |
-
-
-#### 返回样例
-
-```
-{
-    "requestId": "971b4c4d4c7f45b9b8690fb88cb65bf5",
-    "httpCode": "200",
-    "code": "success",
-    "message": "success",
-    "totalCount": 0,
-    "data": []
-}
-```
-
-### 删除IP黑白名单
-#### 请求地址
-http://[hostAddress]/ccsp/action/api/v3/DeleteAccessIp
-
-#### 接口描述
-
-删除IP黑白名单。
-
-#### 请求参数
-
-| 名称      | 类型   | 是否必须   |  描述                              |
-| --------- | ------ | ---------------------------------------- | ---- |
-| domainId | Long | 否 |  加速域名唯一标识，domainName为空时，此值不能为空。|
-| domainName | String | 否 | 加速域名，domainId为空时，此值不能为空。|
-
-#### 返回参数
-
-| 名称      | 类型   | 是否必须   |  描述                            |
-| --------- | ------ | ---------------------------------------- | ---- |
-| data | List<Object> | - | 返回的数据实体对象集合 此接口为空数组对象 |
-
-
-#### 返回样例
-
-```
-{
-    "requestId": "971b4c4d4c7f45b9b8690fb88cb65bf5",
-    "httpCode": "200",
-    "code": "success",
-    "message": "success",
-    "totalCount": 0,
-    "data": []
-}
-```
-****/
-
 
 ## 刷新预热接口列表
 ### 缓存批量刷新
@@ -1256,9 +1188,10 @@ http://[hostAddress]/ccsp/action/api/v3/DescribeCacheHitFlux
 
 | 名称      | 类型     | 是否必须   |  描述                            |
 | --------- | ------ | ---------------------------------------- | ---- |
-| data | List<Object> | - | 域名对象集合，见【Item】描述 |
+| data | List | - | 域名对象集合，见【Item】描述 |
 
 【Item】
+
 | 名称   | 类型     | 是否必须   |  描述                    |
 | --------- | ------ | ------------------------------------ | ---- |
 | time | Date | - | 时间,格式yyyyMMddHHmm |
@@ -1310,7 +1243,7 @@ http://[hostAddress]/ccsp/action/api/v3/DescribeCacheHitNum
 
 | 名称        | 类型     | 是否必须   |  描述                                       |
 | --------- | ------ | ---------------------------------------- | ---- |
-| data | List<Object> | - | 域名对象集合，见【Item】描述 |
+| data | List | - | 域名对象集合，见【Item】描述 |
 
 【Item】
 | 名称   | 类型     | 是否必须   |  描述                    |
@@ -1363,15 +1296,17 @@ http://[hostAddress]/ccsp/action/api/v3/DescribeHttpCode
 
 | 名称        | 类型     | 是否必须   |  描述                                       |
 | --------- | ------ | ---------------------------------------- | ---- |
-| data | List<Object> | - | 域名对象集合，见【Item】描述 |
+| data | List | - | 域名对象集合，见【Item】描述 |
 
 【Item】
+
 | 名称   | 类型     | 是否必须   |  描述                    |
 | --------- | ------ | ------------------------------------ | ---- |
 | httpCode | Long | - | 状态码 |
-| codeData | List<SubItem> | - | 状态码对象集合，见【SubItem】描述|
+| codeData | List | - | 状态码对象集合，见【SubItem】描述|
 
 【SubItem】
+
 | 名称   | 类型     | 是否必须   |  描述                    |
 | --------- | ------ | ------------------------------------ | ---- |
 | time | Date | - | 时间,格式yyyyMMddHHmm |
@@ -1495,9 +1430,10 @@ http://[hostAddress]/ccsp/action/api/v3/DescribeBandwidth
 
 | 名称        | 类型     | 是否必须   |  描述                                       |
 | --------- | ------ | ---------------------------------------- | ---- |
-| data | List<Object> | - | 域名对象集合，见【Item】描述 |
+| data | List | - | 域名对象集合，见【Item】描述 |
 
 【Item】
+
 | 名称   | 类型     | 是否必须   |  描述                    |
 | --------- | ------ | ------------------------------------ | ---- |
 | time | Date | - | 统计时间点 |
@@ -1544,9 +1480,10 @@ http://[hostAddress]/ccsp/action/api/v3/DescribeFlux
 
 | 名称        | 类型     | 是否必须   |  描述                                       |
 | --------- | ------ | ---------------------------------------- | ---- |
-| data | List<Object> | - | 域名对象集合，见【Item】描述 |
+| data | List | - | 域名对象集合，见【Item】描述 |
 
 【Item】
+
 | 名称   | 类型     | 是否必须   |  描述                    |
 | --------- | ------ | ------------------------------------ | ---- |
 | time | Date | - | 时间,格式yyyyMMddHHmm |
@@ -1594,9 +1531,10 @@ http://[hostAddress]/ccsp/action/api/v3/DescribeVisitor
 
 | 名称        | 类型     | 是否必须   |  描述                                       |
 | --------- | ------ | ---------------------------------------- | ---- |
-| data | List<Object> | - | 域名对象集合，见【Item】描述 |
+| data | List | - | 域名对象集合，见【Item】描述 |
 
 【Item】
+
 | 名称   | 类型     | 是否必须   |  描述                    |
 | --------- | ------ | ------------------------------------ | ---- |
 | time | Date | - | 统计时间点 |
@@ -1643,9 +1581,10 @@ http://[hostAddress]/ccsp/action/api/v3/DescribeOriginBandwidth
 
 | 名称        | 类型     | 是否必须   |  描述                                       |
 | --------- | ------ | ---------------------------------------- | ---- |
-| data | List<Object> | - | 域名对象集合，见【Item】描述 |
+| data | List | - | 域名对象集合，见【Item】描述 |
 
 【Item】
+
 | 名称   | 类型     | 是否必须   |  描述                    |
 | --------- | ------ | ------------------------------------ | ---- |
 | time | Date | - | 统计时间点 |
@@ -1692,9 +1631,10 @@ http://[hostAddress]/ccsp/action/api/v3/DescribeOriginFlux
 
 | 名称        | 类型     | 是否必须   |  描述                                       |
 | --------- | ------ | ---------------------------------------- | ---- |
-| data | List<Object> | - | 域名对象集合，见【Item】描述 |
+| data | List | - | 域名对象集合，见【Item】描述 |
 
 【Item】
+
 | 名称   | 类型     | 是否必须   |  描述                    |
 | --------- | ------ | ------------------------------------ | ---- |
 | time | Date | - | 统计时间点 |
@@ -1741,9 +1681,10 @@ http://[hostAddress]/ccsp/action/api/v3/DescribeDownloadLog
 
 | 名称      | 类型   | 是否必须   |  描述                              |
 | --------- | ------ | ---------------------------------------- | ---- |
-| data | List<Object> | - | 域名对象集合，见【Item】描述 |
+| data | List | - | 域名对象集合，见【Item】描述 |
 
 【Item】
+
 | 名称   | 类型     | 是否必须   |  描述                    |
 | --------- | ------ | ------------------------------------ | ---- |
 | createTime | Date | - | 文件创建时间，格式yyyy-MM-dd HH:mm:ss |
@@ -1806,9 +1747,10 @@ http://[hostAddress]/ccsp/action/api/v3/queryCdnIp
 
 | 名称        | 类型     | 是否必须   |  描述                                       |
 | --------- | ------ | ---------------------------------------- | ---- |
-| data | List<Object> | - | 域名对象集合，见【Item】描述 |
+| data | List | - | 域名对象集合，见【Item】描述 |
 
 【Item】
+
 | 名称   | 类型     | 是否必须   |  描述                    |
 | --------- | ------ | ------------------------------------ | ---- |
 | ip | String | -  | 设备IP |
@@ -1833,4 +1775,5 @@ http://[hostAddress]/ccsp/action/api/v3/queryCdnIp
     ]
 }
 ```
+
 
