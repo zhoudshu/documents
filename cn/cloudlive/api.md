@@ -536,7 +536,6 @@ https://ccsp-test.sinocache.net/action/api/live/streamControl?action=forbid&type
 
 ```
 
-## 直播流数据统计-V2版本
 ### 实时在线观看人数
 
 #### 请求地址
@@ -633,7 +632,6 @@ https://ccsp-test.sinocache.net/action/api/live/onlineViewers?accessKeyId=NGAA-t
 ```
 
 
-## 直播流数据统计-V2版本
 ### 流量
 
 #### 请求地址
@@ -743,7 +741,6 @@ https://ccsp-test.sinocache.net/action/api/live/flow?accessKeyId=NGAA-test&times
 
 ```
 
-## 直播流数据统计-V2版本
 ### 带宽
 
 #### 请求地址
@@ -853,7 +850,6 @@ https://ccsp-test.sinocache.net/action/api/live/bandwidth?accessKeyId=NGAA-test&
 ```
 
 
-## 直播流数据统计-V2版本
 ### 独立IP数
 
 #### 请求地址
@@ -959,7 +955,6 @@ https://ccsp-test.sinocache.net/action/api/live/uv?accessKeyId=NGAA-test&timesta
 ```
 
 
-## 直播流数据统计-V2版本
 ### 请求次数
 
 #### 请求地址

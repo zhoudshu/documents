@@ -33,7 +33,7 @@
 ## 查看域名
 您可以在[【域名管理】](https://ccms.zhoudsh.com:9443/control/#/layout/live/livedomain/1604569411261)页面，查看已添加域名 CNAME 配置状态、所属类型、域名开始时间。若您需要查看域名详情，单击需要查看的域名或其右侧【管理】，即可进入查看域名信息。
 
-![](https://github.com/zhoudshu/documents/blob/main/images/cloudlive/cloudlive_03.png)
+![](https://github.com/zhoudshu/documents/blob/main/images/cloudlive/cloudlive_04.png)
 
 ## 配置域名
 ### 配置推流域名
@@ -48,15 +48,15 @@
 1.  进入[【域名管理】](https://ccms.zhoudsh.com:9443/control/#/layout/live/livedomain/1604569411261)，单击需配置的**推流域名**或【管理】进入域名详情页。 
 2.  单击【推流配置】，查看【推流配置】标签，单击右侧的【编辑】。
 
-![](https://github.com/zhoudshu/documents/blob/main/images/cloudlive/cloudlive_03.png)
+![](https://github.com/zhoudshu/documents/blob/main/images/cloudlive/cloudlive_05.png)
 
 3.  进入推流鉴权配置页，单击
 
-![](https://github.com/zhoudshu/documents/blob/main/images/cloudlive/cloudlive_03.png) 按钮选择开启/关闭推流鉴权。
+![](https://github.com/zhoudshu/documents/blob/main/images/cloudlive/cloudlive_06.png) 按钮选择开启/关闭推流鉴权。
 
 4. 修改 KEY ，单击【保存】即可成功生效。
 
-![](https://github.com/zhoudshu/documents/blob/main/images/cloudlive/cloudlive_03.png)
+![](https://github.com/zhoudshu/documents/blob/main/images/cloudlive/cloudlive_07.png)
 
 #### 推流地址生成器
 
@@ -68,7 +68,7 @@
    2. 填写自定义的流名称 StreamName，例如：`liveteststream`。
    3. 单击【生成推流地址】即可生成带着 StreamName 的 RTMP 推流地址。
   
-  ![](https://github.com/zhoudshu/documents/blob/main/images/cloudlive/cloudlive_03.png)
+  ![](https://github.com/zhoudshu/documents/blob/main/images/cloudlive/cloudlive_08.png)
 
 3. 配置成功后，可在 [【流管理】]( https://ccms.zhoudsh.com:9443/control/#/layout/live/onlinestream/1604570470005) 进行测试、禁用和删除。
 4. 生成推流地址即可进行直播推流开播，但是观看直播要获取播放地址，具体请参见 【播放配置】 章节
@@ -102,18 +102,18 @@ rtmp://livepush.test.video.zhoudsh.com/live/test?txSecret=32a4e60f3c882797f4126e
 1.	进入[【域名管理】]()，单击需配置的**推流域名** 点击【管理】进入域名详情页。
 2.	选择【模板配置】页签，单击【录制配置】标签右上角的【编辑】。
 
-    ![](https://github.com/zhoudshu/documents/blob/main/images/cloudlive/cloudlive_03.png)
+    ![](https://github.com/zhoudshu/documents/blob/main/images/cloudlive/cloudlive_09.png)
 
 3. 选择录制配置模板，单击【保存】即可。
 
-    ![](https://github.com/zhoudshu/documents/blob/main/images/cloudlive/cloudlive_03.png)
+    ![](https://github.com/zhoudshu/documents/blob/main/images/cloudlive/cloudlive_10.png)
 
 ##### 解绑录制模板
 1. 进入[【域名管理】]()，单击需配置的**推流域名** 点击【管理】进入域名详情页。
 2. 选择【模板配置】页签，单击【录制配置】标签右上角的【编辑】。
 3. 单击取消相应模板的勾选，单击【保存】即可。
 
-    ![](https://github.com/zhoudshu/documents/blob/main/images/cloudlive/cloudlive_03.png)
+    ![](https://github.com/zhoudshu/documents/blob/main/images/cloudlive/cloudlive_12.png)
 
 
 ##### 录制文件获取
@@ -130,18 +130,18 @@ rtmp://livepush.test.video.zhoudsh.com/live/test?txSecret=32a4e60f3c882797f4126e
 1. 进入[【域名管理】]()，单击需配置的**推流域名** 点击【管理】进入域名详情页。
 2. 选择【模板配置】，单击【截图配置】标签右上角的【编辑】。
 
-    ![](https://github.com/zhoudshu/documents/blob/main/images/cloudlive/cloudlive_03.png)
+    ![](https://github.com/zhoudshu/documents/blob/main/images/cloudlive/cloudlive_13.png)
 
 3. 选择截图配置模板。单击【保存】即可完成配置。
 
-    ![](https://github.com/zhoudshu/documents/blob/main/images/cloudlive/cloudlive_03.png)
+    ![](https://github.com/zhoudshu/documents/blob/main/images/cloudlive/cloudlive_14.png)
 
 ##### 解绑截图模板
 1. 进入[【域名管理】]()，单击需配置的**推流域名** 点击【管理】进入域名详情页。
 2. 选择【模板配置】页签，单击【截图配置】标签右上角的【编辑】。
 3. 单击取消相应模板的勾选，单击【保存】即可。
    
- ![](https://github.com/zhoudshu/documents/blob/main/images/cloudlive/cloudlive_03.png)
+ ![](https://github.com/zhoudshu/documents/blob/main/images/cloudlive/cloudlive_15.png)
 
 #### 水印配置
 直播推流默认关闭水印功能，本文将向您介绍如何对指定推流域名关联水印模板开启水印功能，以及关联成功后如何解绑模板关闭水印功能。
@@ -154,11 +154,11 @@ rtmp://livepush.test.video.zhoudsh.com/live/test?txSecret=32a4e60f3c882797f4126e
 1.	进入[【域名管理】]()，单击需配置的**推流域名** 点击【管理】进入域名详情页。
 2.	选择【模板配置】页签，单击【水印配置】标签右上角的【编辑】。
     
-![](https://github.com/zhoudshu/documents/blob/main/images/cloudlive/cloudlive_03.png)
+![](https://github.com/zhoudshu/documents/blob/main/images/cloudlive/cloudlive_16.png)
 
 4.	选择水印配置模板，单击【保存】即可。
 
-    ![](https://github.com/zhoudshu/documents/blob/main/images/cloudlive/cloudlive_03.png)
+    ![](https://github.com/zhoudshu/documents/blob/main/images/cloudlive/cloudlive_17.png)
 
 >! 您可通过单击操作栏的【预览】查看水印效果。
 
@@ -167,7 +167,7 @@ rtmp://livepush.test.video.zhoudsh.com/live/test?txSecret=32a4e60f3c882797f4126e
 2. 选择【模板配置】页签，单击【水印配置】标签右上角的【编辑】。
 3. 单击取消相应模板的勾选，单击【保存】即可。
 
-    ![](https://github.com/zhoudshu/documents/blob/main/images/cloudlive/cloudlive_03.png)
+    ![](https://github.com/zhoudshu/documents/blob/main/images/cloudlive/cloudlive_18.png)
 
 #### 转码配置
 直播播放默认通过源码率输出，若需要对播放码率进行限制或者设定，可对推流域名进行转码模板关联。本文将向您介绍如何在推流域名下进行转码模板关联与解绑。
@@ -184,7 +184,7 @@ rtmp://livepush.test.video.zhoudsh.com/live/test?txSecret=32a4e60f3c882797f4126e
 3. 选择不同的转码配置模板，为该域名设定模板设置的编译方式和码率。
 4. 单击【保存】即可。
 
-    ![](https://github.com/zhoudshu/documents/blob/main/images/cloudlive/cloudlive_03.png)
+    ![](https://github.com/zhoudshu/documents/blob/main/images/cloudlive/cloudlive_19.png)
 
 ##### 转码播放地址说明
 配置转码模板后，播放 URL 需增加转码模板名称，拼接方式为：**播放地址_转码模板名称**。若未拼接转码模板名称，则播放的为原始直播流内容。
@@ -205,7 +205,7 @@ http://domain/AppName/<b style="color:yellow;">StreamName_hd</b>.flv?txSecret=Md
 3. 单击右侧的【编辑】，取消相应模板的勾选。
 4. 然后单击【保存】，即可取消模板与域名的关联。
     
-   ![](https://github.com/zhoudshu/documents/blob/main/images/cloudlive/cloudlive_03.png)
+   ![](https://github.com/zhoudshu/documents/blob/main/images/cloudlive/cloudlive_20.png)
 
 >? 若需删除模板，可在解绑模板后，进入【功能模板】>[【转码配置】]()进行删除操作，具体请参见 [删除模板]()。
 
@@ -225,7 +225,7 @@ http://domain/AppName/<b style="color:yellow;">StreamName_hd</b>.flv?txSecret=Md
 2.	选择【模板配置】页签，单击【回调配置】标签右上角的【编辑】。
 3.	选择指定对应的回调模板，单击【保存】即可。
 
-    ![](https://github.com/zhoudshu/documents/blob/main/images/cloudlive/cloudlive_03.png)
+    ![](https://github.com/zhoudshu/documents/blob/main/images/cloudlive/cloudlive_21.png)
 
 ##### 解绑回调模板<span id="untie"></span>
 
@@ -233,7 +233,7 @@ http://domain/AppName/<b style="color:yellow;">StreamName_hd</b>.flv?txSecret=Md
 2. 选择【模板配置】页签，单击【回调配置】标签右上角的【编辑】。
 3. 取消关联模板的勾选，单击【保存】即可。
     
-    ![](https://github.com/zhoudshu/documents/blob/main/images/cloudlive/cloudlive_03.png)
+    ![](https://github.com/zhoudshu/documents/blob/main/images/cloudlive/cloudlive_22.png)
 
 ### 配置播放域名
 
@@ -247,11 +247,11 @@ http://domain/AppName/<b style="color:yellow;">StreamName_hd</b>.flv?txSecret=Md
 	2. 填写自定义的流名称 StreamName，例如：`liveteststream`。播放地址 StreamName 要与推流地址 StreamName 一致才能播放对应的流。
 	3. 单击【生成播放地址】即可。
 
-    ![](https://github.com/zhoudshu/documents/blob/main/images/cloudlive/cloudlive_03.png)
+    ![](https://github.com/zhoudshu/documents/blob/main/images/cloudlive/cloudlive_23.png)
 
 3. 若您的播放域名未开启播放鉴权，您还可以在【播放配置】>【播放地址】标签下，查看该播放域名下 RTMP、FLV、HLS 这三种播放地址。替换播放地址中的 StreamName（流名称）关联推流地址，关联后即可通过播放地址查看直播画面。
 
-    ![](https://github.com/zhoudshu/documents/blob/main/images/cloudlive/cloudlive_03.png)
+    ![](https://github.com/zhoudshu/documents/blob/main/images/cloudlive/cloudlive_24.png)
 
 #### 播放地址
 ###### 1. 播放地址生成规则
@@ -302,7 +302,7 @@ URL 鉴权的原理是云直播客户通过鉴权配置生成加密 URL，并将
 > - **鉴权 Key**：用户自定义设置，支持大小写字母和数字.
 > - **有效时间**：签名的有效时间，时间戳为十六进制 UNIX 时间。
 
-  ![](https://github.com/zhoudshu/documents/blob/main/images/cloudlive/cloudlive_03.png)
+  ![](https://github.com/zhoudshu/documents/blob/main/images/cloudlive/cloudlive_25.png)
 
 >! 开启播放域名的鉴权设置后，原有播放 URL 将无法直接访问，会返回403。开启此功能，请确保您的业务兼容以下鉴权算法，以免影响您的直播业务。
 
@@ -329,9 +329,9 @@ URL 鉴权的原理是云直播客户通过鉴权配置生成加密 URL，并将
 >- 回源协议为 HLS 时，播放协议只支持 HLS。
 >- 回源协议不支持多选，播放协议支持多选。
 
-![](https://github.com/zhoudshu/documents/blob/main/images/cloudlive/cloudlive_03.png)
+![](https://github.com/zhoudshu/documents/blob/main/images/cloudlive/cloudlive_26.png)
 
-![](https://github.com/zhoudshu/documents/blob/main/images/cloudlive/cloudlive_03.png)
+![](https://github.com/zhoudshu/documents/blob/main/images/cloudlive/cloudlive_27.png)
 
 
 ## 禁用域名
@@ -339,15 +339,15 @@ URL 鉴权的原理是云直播客户通过鉴权配置生成加密 URL，并将
 
 >? 禁用域名后该域名无法访问，重新启用后可正常访问，播放域名和推流域名操作相同。
 
-![](https://github.com/zhoudshu/documents/blob/main/images/cloudlive/cloudlive_03.png)
+![](https://github.com/zhoudshu/documents/blob/main/images/cloudlive/cloudlive_28.png)
 
 ## 启用域名
 若您需要将已禁用的域名重新启用，单击所需启用的域名右侧【启用】，当该域名状态由“未启用”变为“已启用”，表示域名禁用成功。
 
-![](https://github.com/zhoudshu/documents/blob/main/images/cloudlive/cloudlive_03.png)
+![](https://github.com/zhoudshu/documents/blob/main/images/cloudlive/cloudlive_29.png)
 
 ## 删除域名
 若您需要删除域名，单击目标域名右侧的【删除】，在弹窗中确认是否需要删除当前域名，单击【确定】后即可删除域名。
 
-![](https://github.com/zhoudshu/documents/blob/main/images/cloudlive/cloudlive_03.png)
+![](https://github.com/zhoudshu/documents/blob/main/images/cloudlive/cloudlive_30.png)
 
