@@ -24,7 +24,7 @@
 	- 高级配置项（非必填）：单击【高级配置】展开内容即可选择配置，具体请参见 [标准转码高级配置说明](#C_trans_high)。
 3. 填写完成后，单击【保存】即可。
 
-![](https://github.com/zhoudshu/documents/blob/main/images/cloudlive/cloudlive_37.png)
+![](https://docs.zhoudsh.com:9443/images/cloudlive/cloudlive_37.png)
 
 <table id="C_trans_normal">
 <tr><th width="20%">标准转码基础配置项</th><th>是否必填</th><th>说明</th></tr>
@@ -90,7 +90,7 @@
 	- 高级配置项（非必填）：单击【高级配置】展开内容即可选择配置，具体请参见 [极速高清转码高级配置说明](#C_topspeed_high)。
 3. 单击【保存】即可。
 
-![](https://github.com/zhoudshu/documents/blob/main/images/cloudlive/cloudlive_38.png)
+![](https://docs.zhoudsh.com:9443/images/cloudlive/cloudlive_38.png)
 
 <table  id="C_topspeed_normal">
 <tr><th width="20%">极速高清转码基础配置项</th><th>是否必填</th><th>说明</th>
@@ -147,7 +147,7 @@
 1. 登录云直播控制台，【功能配置】>[【转码配置】]()。
 2. 单击【创建转码模板】，选择可用类型为『**纯音质**』，填写 [配置项](#C_audio_normal)，并单击【保存】即可。
 
-![](https://github.com/zhoudshu/documents/blob/main/images/cloudlive/cloudlive_39.png)
+![](https://docs.zhoudsh.com:9443/images/cloudlive/cloudlive_39.png)
 
 <table id="C_audio_normal">
 <tr><th width="20%">纯音频转码基础配置项</th><th>是否必填</th><th>说明</th>
@@ -170,7 +170,7 @@
 ## 关联域名
 1. 登录云直播控制台，进入【功能配置】>[【转码配置】]()。
 2. 在域名绑定窗口中，选择您需绑定的**转码模板**及**推流域名**，单击【确定】即可绑定成功。
-![](https://github.com/zhoudshu/documents/blob/main/images/cloudlive/cloudlive_40.png)
+![](https://docs.zhoudsh.com:9443/images/cloudlive/cloudlive_40.png)
 >?支持通过单击【添加】为当前模板绑定多个推流域名。
 
 
@@ -180,7 +180,7 @@
 2. 选择您已创建成功的转码模板，并单击右侧的【编辑】，进入修改模板信息。
 3. 单击【保存】即可。
 
-![](https://github.com/zhoudshu/documents/blob/main/images/cloudlive/cloudlive_41.png)
+![](https://docs.zhoudsh.com:9443/images/cloudlive/cloudlive_41.png)
 
 <span id="delete"></span>
 ## 删除模板
@@ -190,6 +190,6 @@
 2. 选择未关联推流域名的转码模板，单击【删除】。
 3. 确认是否删除当前转码模板，单击【确定】即可成功删除。
 
-![](https://github.com/zhoudshu/documents/blob/main/images/cloudlive/cloudlive_42.png)
+![](https://docs.zhoudsh.com:9443/images/cloudlive/cloudlive_42.png)
 
 

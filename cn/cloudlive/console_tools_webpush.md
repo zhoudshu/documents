@@ -18,7 +18,7 @@
 	- 编辑 AppName，用于区分同一个域名下多个 App 的地址路径，默认值为 live。
 3. 单击【开始推流】，授权允许调用摄像头，即可开始推流。
 
-![](https://github.com/zhoudshu/documents/blob/main/images/cloudlive/cloudlive_67.png)
+![](https://docs.zhoudsh.com:9443/images/cloudlive/cloudlive_67.png)
 
 4. 若您在【域名管理】中已添加播放域名，即可在下方查看对应生成的播放地址。其中，播放地址由以下4部分组成：
 
@@ -26,4 +26,4 @@
 
 支持 RTMP、FLV 和 HLS 协议，查看播放地址：
 
-![](https://github.com/zhoudshu/documents/blob/main/images/cloudlive/cloudlive_68.png)
+![](https://docs.zhoudsh.com:9443/images/cloudlive/cloudlive_68.png)

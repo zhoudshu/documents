@@ -23,7 +23,7 @@
 	- 设置位置显示 X 轴方向和 Y 轴方向。
 6. 单击【保存】即可。
 
-![](https://github.com/zhoudshu/documents/blob/main/images/cloudlive/cloudlive_46.png)
+![](https://docs.zhoudsh.com:9443/images/cloudlive/cloudlive_46.png)
 
 
 ## 修改模板
@@ -32,7 +32,7 @@
 2. 选择您已创建成功的水印模板，并单击右侧的【编辑】，即可进入修改模板信息。
 3. 单击【保存】即可。
 
-![](https://github.com/zhoudshu/documents/blob/main/images/cloudlive/cloudlive_47.png)
+![](https://docs.zhoudsh.com:9443/images/cloudlive/cloudlive_47.png)
 
 >? 若您需查看水印模板在画面上的效果，可单击【预览】查看。
 
@@ -43,7 +43,7 @@
 2. 选择您已创建成功的水印模板，单击上方的删除按钮。
 3. 确认是否删除当前水印模板，单击【确定】即可成功删除。
 
-![](https://github.com/zhoudshu/documents/blob/main/images/cloudlive/cloudlive_48.png)
+![](https://docs.zhoudsh.com:9443/images/cloudlive/cloudlive_48.png)
 
 ## 关联域名
 

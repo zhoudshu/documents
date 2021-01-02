@@ -17,7 +17,7 @@
 1. 登录云直播控制台，【功能配置】>[【截图配置】]()。
 2. 单击【+】，填写配置项，并单击【保存】即可。
 
-![](https://github.com/zhoudshu/documents/blob/main/images/cloudlive/cloudlive_43.png)
+![](https://docs.zhoudsh.com:9443/images/cloudlive/cloudlive_43.png)
 
 <table>
 <thead><tr><th width="15%">配置项</th><th>说明</th></tr></thead>
@@ -45,7 +45,7 @@
 2. 选择您已创建成功的截图模板，并单击右侧的【编辑】，即可进入修改模板信息。
 3. 单击【保存】即可。
 
-![](https://github.com/zhoudshu/documents/blob/main/images/cloudlive/cloudlive_44.png)
+![](https://docs.zhoudsh.com:9443/images/cloudlive/cloudlive_44.png)
 
 ## 删除模板
 
@@ -55,7 +55,7 @@
 2. 选择您已创建成功的截图模板，单击上方的删除按钮。
 3. 确认是否删除当前截图配置模板，单击【确定】即可成功删除。
 
-![](https://github.com/zhoudshu/documents/blob/main/images/cloudlive/cloudlive_45.png)
+![](https://docs.zhoudsh.com:9443/images/cloudlive/cloudlive_45.png)
 
 
 

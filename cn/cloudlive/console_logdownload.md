@@ -6,7 +6,7 @@
 1. 单击左侧菜单栏的【日志下载】，进入日志下载页面。
 2. 选择要下载日志的时间范围及域名，单击【查询】，即可获取日志下载链接进行日志的下载。
 
-![](https://github.com/zhoudshu/documents/blob/main/images/cloudlive/cloudlive_63.png)
+![](https://docs.zhoudsh.com:9443/images/cloudlive/cloudlive_63.png)
 
 >! 
 - 直播日志默认不开启，如果需求，可以联系对应的技术对接人。

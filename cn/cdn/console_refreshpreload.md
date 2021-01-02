@@ -4,10 +4,10 @@
 ## 刷新管理
 可根据时间，URL，任务批次ID，任务类型（包含目录刷新、URL刷新），任务执行状态（等待中、处理中、成功、失败）选择需要查看的内容。
 
-![](https://github.com/zhoudshu/documents/blob/main/images/cdn/cdn_26.png)
+![](https://docs.zhoudsh.com:9443/images/cdn/cdn_26.png)
 
 ## 预热管理
 可根据时间，URL，任务批次ID，执行状态选择需要查看的预热任务
 
-![](https://github.com/zhoudshu/documents/blob/main/images/cdn/cdn_27.png)
+![](https://docs.zhoudsh.com:9443/images/cdn/cdn_27.png)
 

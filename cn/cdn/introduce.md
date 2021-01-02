@@ -6,7 +6,7 @@
 
 ## 技术架构
 
-![](https://github.com/zhoudshu/documents/blob/main/images/cdn/cdn_01.png)
+![](https://docs.zhoudsh.com:9443/images/cdn/cdn_01.png)
 
 ## 加速原理
 

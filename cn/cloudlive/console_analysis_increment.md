@@ -2,7 +2,7 @@
 
 新流云控制台为标准直播提供计费用量查询功能，若您想了解当前直播录制、直播转码、直播截图等服务使用情况，您可以通过云直播控制台【统计分析】>[【增值功能】]()查看相关数据。您可以查看一个月以内的云直播服务使用的相关数据。
 
-![](https://github.com/zhoudshu/documents/blob/main/images/cloudlive/cloudlive_53.png)
+![](https://docs.zhoudsh.com:9443/images/cloudlive/cloudlive_53.png)
 
 ## 计费说明
 
@@ -39,10 +39,10 @@
 ## 月度消费量
 选择【直播录制】页签，您可查看直播录制的月度消费数据。支持**下载**最近1个月的截图和录制消耗明细，通过查看“月度消费量”标签，单击所需查询月份右侧的【导出详情】即可导出详细的录制路数信息。
 
-![](https://github.com/zhoudshu/documents/blob/main/images/cloudlive/cloudlive_54.png)
+![](https://docs.zhoudsh.com:9443/images/cloudlive/cloudlive_54.png)
 
 ## 近30天消费量
 
 选择【直播转码】页签，您可查看近30天的转码消费量。支持查看转码的具体开始时间、结束时间、时长、编码方式、码率以及转码类型等信息。
 
-![](https://github.com/zhoudshu/documents/blob/main/images/cloudlive/cloudlive_55.png)
+![](https://docs.zhoudsh.com:9443/images/cloudlive/cloudlive_55.png)
