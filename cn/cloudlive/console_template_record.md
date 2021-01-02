@@ -16,7 +16,7 @@
 1. 登录云直播控制台，进入【功能配置】>[【录制配置】]()。
 2. 单击【+】设置基本信息，进行如下配置：
 
-![](https://github.com/zhoudshu/documents/blob/main/images/cloudlive/cloudlive_03.png)
+![](https://github.com/zhoudshu/documents/blob/main/images/cloudlive/cloudlive_34.png)
 
    <table>
    <thead><tr><th>配置项</th><th>配置描述</th></tr></thead>
@@ -50,14 +50,14 @@
 2. 选择您已创建成功的录制模板，并单击右侧的【编辑】，即可进入修改模板信息。
 3. 单击【保存】即可。
 
-![](https://github.com/zhoudshu/documents/blob/main/images/cloudlive/cloudlive_03.png)
+![](https://github.com/zhoudshu/documents/blob/main/images/cloudlive/cloudlive_35.png)
 
 ## 删除录制模板
 1. 进入【功能配置】>【录制配置】。
 2. 选择您已创建成功的录制模板，单击上方的删除按钮。
 3. 确认是否删除当前录制模板，单击【确定】即可成功删除。
 
-![](https://github.com/zhoudshu/documents/blob/main/images/cloudlive/cloudlive_03.png)
+![](https://github.com/zhoudshu/documents/blob/main/images/cloudlive/cloudlive_36.png)
 
 ## 关联与解绑推流域名
 具体操作及相关说明，请参见 [录制配置]()。

@@ -27,7 +27,7 @@
 2. 在左侧菜单栏选择【功能模版】>[【回调配置】]()。
 3. 单击 【+】创建回调模板，在回调设置弹框中填写完成回调信息，单击【保存】即可。
 
-![](https://github.com/zhoudshu/documents/blob/main/images/cloudlive/cloudlive_03.png)
+![](https://github.com/zhoudshu/documents/blob/main/images/cloudlive/cloudlive_49.png)
 
 <table>
 <thead><tr><th width="17%">配置项</th><th>说明</th></tr></thead><tbody><tr>
@@ -60,7 +60,7 @@
 2. 选择您已创建成功的回调配置模板，并单击右侧的【编辑】，即可进入修改模板信息。
 3. 单击【保存】即可。
 
-![](https://github.com/zhoudshu/documents/blob/main/images/cloudlive/cloudlive_03.png)
+![](https://github.com/zhoudshu/documents/blob/main/images/cloudlive/cloudlive_50.png)
 
 ## 删除模板<span id="delete"></span>
 
@@ -70,5 +70,5 @@
 2. 选择您已创建成功的回调配置模板，单击上方的删除按钮。
 3. 确认是否删除当前回调配置配置模板，单击【确定】即可成功删除。
 
-![](https://github.com/zhoudshu/documents/blob/main/images/cloudlive/cloudlive_03.png)
+![](https://github.com/zhoudshu/documents/blob/main/images/cloudlive/cloudlive_51.png)
 

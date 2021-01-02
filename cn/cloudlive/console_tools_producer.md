@@ -38,12 +38,12 @@
 5. 选择地址过期时间，例如：`2020-06-09 15:36:04`。
 6. 单击【生成地址】即可。
 
-![](https://github.com/zhoudshu/documents/blob/main/images/cloudlive/cloudlive_03.png)
+![](https://github.com/zhoudshu/documents/blob/main/images/cloudlive/cloudlive_64.png)
 
 ### 推流地址说明
 推流支持 RTMP 协议，可通过地址生成器功能生成前缀为`rtmp://`的推流地址。
 
-![](https://github.com/zhoudshu/documents/blob/main/images/cloudlive/cloudlive_03.png)
+![](https://github.com/zhoudshu/documents/blob/main/images/cloudlive/cloudlive_65.png)
 
 <h2 id="play">生成播放地址</h2>
 
@@ -56,5 +56,5 @@
 6. 选择是否引用已创建的转码模板。
 6. 单击【生成地址】即可。
 
-![](https://github.com/zhoudshu/documents/blob/main/images/cloudlive/cloudlive_03.png)
+![](https://github.com/zhoudshu/documents/blob/main/images/cloudlive/cloudlive_66.png)
 

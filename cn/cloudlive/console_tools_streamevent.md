@@ -13,7 +13,7 @@
 在直播推流中断后，选择左侧菜单栏中的【辅助工具】>【[断流诊断()】，进入断流诊断。
 
 
-![](https://github.com/zhoudshu/documents/blob/main/images/cloudlive/cloudlive_03.png)
+![](https://github.com/zhoudshu/documents/blob/main/images/cloudlive/cloudlive_52.png)
 
 其中：
 - **APP**：推流地址中的 AppName。
